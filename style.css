@@ -1,71 +1,64 @@
 /* menu */
 
-#menu{
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.itemName{
-
-padding-right: 80px;
-
+.menuQuantity {
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-h3{
+.menuPrice {
+    margin-right: 40px;
+}
 
-padding-right: 20px;
-width: 100px;
+#totalTitle {
+    margin-left: 40px;
+    margin-right: 40px;
+}
 
+.numberInput {
+    width: 80px;
+    height: 20px;
+}
+
+form {
+    padding: 40px 150px 40px 150px;
+    border: 1px solid black;
+}
+
+.itemRow {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 
-.numberInput{
-
-width: 100px;
-height: 20px;
-
-}
-
-form{
-
-	padding: 40px 150px 40px 150px;
-	border:1px solid black;
-
-}
-
-.itemRow{
-	justify-content: center;
-	align-items: center;
-	margin:10px;
-	display: flex;
-}
-
-.secondItemRow{
-
-padding-left: 80px;
-
-}
 
 /* cart */
 
+
 /* cash  */
+
 
 /* credit */
 
 #credit {
-  outline: 1px solid black;
+    outline: 1px solid black;
 }
 
 #credit form div {
-  display: block;
+    display: block;
 }
 
 #credit input {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 #cashbutton {
 	display: inline-block;
   padding: 3px 12px;
@@ -82,3 +75,13 @@ padding-left: 80px;
 }
 
 /* receipt */
+=======
+.totalRow {
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* receipt */
+>>>>>>> 4dfcf4239d637ea83528da4bb29e69252fede88d
