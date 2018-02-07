@@ -50,31 +50,41 @@
 <div id="credit">
 	<h1>Credit Card</h1>
 	<form>
-		<label>Card Number<input type="number"></input></label>
-		<label>CVV<input type="number"></input></label>
-		<label>Name<input type="text"></input></label>
-		<label><input type="radio" name="cardType">American Express</label>
-		<label><input type="radio" name="cardType">Visa</label>
-		<label><input type="radio" name="cardType">Mastercard</label>
-		<label><input type="radio" name="cardType">Discover</label>
-		<label>Expiration Date
-			<select>
-				<option value="01">Jan</option>
-				<option value="02">Feb</option>
-				<option value="03">Mar</option>
-				<option value="04">Apr</option>
-				<option value="05">May</option>
-				<option value="06">Jun</option>
-				<option value="07">Jul</option>
-				<option value="08">Aug</option>
-				<option value="09">Sep</option>
-				<option value="10">Oct</option>
-				<option value="11">Nov</option>
-				<option value="12">Dec</option>
-			</select>
-			<input type="number"  min="2018" step="1"></input>
-		</label>
-		<input type="submit" value="Charge"></input>
+		<div>
+			<label>Card Number<input type="number"></input></label>
+		</div>
+		<div>
+			<label>CVV<input type="number"></input></label>
+			<label>Name<input type="text"></input></label>
+		</div>
+		<div>
+			<label class="cardOption"><input type="radio" name="cardType">American Express</label>
+			<label class="cardOption"><input type="radio" name="cardType">Visa</label>
+			<label class="cardOption"><input type="radio" name="cardType">Mastercard</label>
+			<label class="cardOption"><input type="radio" name="cardType">Discover</label>
+		</div>
+		<div>
+			<label>Expiration Date
+				<select>
+					<option value="01">Jan</option>
+					<option value="02">Feb</option>
+					<option value="03">Mar</option>
+					<option value="04">Apr</option>
+					<option value="05">May</option>
+					<option value="06">Jun</option>
+					<option value="07">Jul</option>
+					<option value="08">Aug</option>
+					<option value="09">Sep</option>
+					<option value="10">Oct</option>
+					<option value="11">Nov</option>
+					<option value="12">Dec</option>
+				</select>
+				<input type="number"  min="2018" step="1"></input>
+			</label>
+		</div>
+		<div>
+			<input type="submit" value="Charge"></input>
+		</div>
 	</form>
 </div>
 
