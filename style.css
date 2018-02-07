@@ -66,4 +66,19 @@ padding-left: 80px;
   box-sizing: border-box;
 }
 
+#cashbutton {
+	display: inline-block;
+  padding: 3px 12px;
+  background-color: lightblue;
+	border-radius: 3px;
+  font-family: 'verdana', sans-serif;
+}
+#creditbutton {
+  display: inline-block;
+  padding: 3px 12px;
+  background-color: lightblue;
+	border-radius: 3px;
+  font-family: 'verdana', sans-serif;
+}
+
 /* receipt */
