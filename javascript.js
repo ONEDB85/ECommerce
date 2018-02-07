@@ -57,6 +57,11 @@ function applyTax(preTaxTotal) {
   return preTaxTotal + preTaxTotal * salesTax;
 }
 
+function getTotal() {
+  return applyTax(getSubtotal());
+}
+
+
 
 
 
