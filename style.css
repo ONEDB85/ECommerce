@@ -1,17 +1,5 @@
-<<<<<<< HEAD
+/* menu */
 
-#credit {
-  outline: 1px solid black;
-}
-
-#credit form div {
-  display: block;
-}
-
-#credit input {
-  box-sizing: border-box;
-}
-=======
 #menu{
 
 	display: flex;
@@ -59,4 +47,23 @@ form{
 padding-left: 80px;
 
 }
->>>>>>> d89c16b805295cae6d3543c8ee9ea502f21d645f
+
+/* cart */
+
+/* cash  */
+
+/* credit */
+
+#credit {
+  outline: 1px solid black;
+}
+
+#credit form div {
+  display: block;
+}
+
+#credit input {
+  box-sizing: border-box;
+}
+
+/* receipt */
