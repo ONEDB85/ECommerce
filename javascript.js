@@ -34,7 +34,9 @@ var item10price;
 var item11price;
 var item12price;
 
+// non item variables
 var salesTax = 0.06;
+var totalOwed;
 
 function getSubtotal() {
   var subtotal =
