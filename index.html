@@ -21,73 +21,73 @@
             </div>
             <div class="itemRow">
                 <h3>Item 1</h3>
-                <input type="number" class="menuQuantity numberInput">
+                <input id="item1" type="number" class="menuQuantity numberInput">
                 <h3 class="menuPrice" value="5">$5.00</h3>
                 <h3 class="subTotal">PlaceHolder</h3>
             </div>
             <div class="itemRow">
                 <h3>Item 2</h3>
-                <input type="number" class="menuQuantity numberInput" class="numberInput">
+                <input id="item2" type="number" class="menuQuantity numberInput" class="numberInput">
                 <h3 class="menuPrice" value="5">$5.00</h3>
                 <h3 class="subTotal">PlaceHolder</h3>
             </div>
             <div class="itemRow">
                 <h3>Item 3</h3>
-                <input type="number" class="menuQuantity numberInput" class="numberInput">
+                <input id="item3" type="number" class="menuQuantity numberInput" class="numberInput">
                 <h3 class="menuPrice" value="5">$5.00</h3>
                 <h3 class="subTotal">PlaceHolder</h3>
             </div>
             <div class="itemRow">
                 <h3>Item 4</h3>
-                <input type="number" class="menuQuantity numberInput" class="numberInput">
+                <input id="item4" type="number" class="menuQuantity numberInput" class="numberInput">
                 <h3 class="menuPrice" value="5">$5.00</h3>
                 <h3 class="subTotal">PlaceHolder</h3>
             </div>
             <div class="itemRow">
                 <h3>Item 5</h3>
-                <input type="number" class="menuQuantity numberInput" class="numberInput">
+                <input id="item5" type="number" class="menuQuantity numberInput" class="numberInput">
                 <h3 class="menuPrice" value="5">$5.00</h3>
                 <h3 class="subTotal">PlaceHolder</h3>
             </div>
             <div class="itemRow">
                 <h3>Item 6</h3>
-                <input type="number" class="menuQuantity numberInput" class="numberInput">
+                <input id="item6" type="number" class="menuQuantity numberInput" class="numberInput">
                 <h3 class="menuPrice" value="5">$5.00</h3>
                 <h3 class="subTotal">PlaceHolder</h3>
             </div>
             <div class="itemRow">
                 <h3>Item 7</h3>
-                <input type="number" class="menuQuantity numberInput" class="numberInput">
+                <input id="item7" type="number" class="menuQuantity numberInput" class="numberInput">
                 <h3 class="menuPrice" value="5">$5.00</h3>
                 <h3 class="subTotal">PlaceHolder</h3>
             </div>
             <div class="itemRow">
                 <h3>Item 8</h3>
-                <input type="number" class="menuQuantity numberInput" class="numberInput">
+                <input id="item8" type="number" class="menuQuantity numberInput" class="numberInput">
                 <h3 class="menuPrice" value="5">$5.00</h3>
                 <h3 class="subTotal">PlaceHolder</h3>
             </div>
             <div class="itemRow">
                 <h3>Item 9</h3>
-                <input type="number" class="menuQuantity numberInput" class="numberInput">
+                <input id="item9" type="number" class="menuQuantity numberInput" class="numberInput">
                 <h3 class="menuPrice" value="5">$5.00</h3>
                 <h3 class="subTotal">PlaceHolder</h3>
             </div>
             <div class="itemRow">
                 <h3>Item 10</h3>
-                <input type="number" class="menuQuantity numberInput" class="numberInput">
+                <input id="item10" type="number" class="menuQuantity numberInput" class="numberInput">
                 <h3 class="menuPrice" value="5">$5.00</h3>
                 <h3 class="subTotal">PlaceHolder</h3>
             </div>
             <div class="itemRow">
                 <h3>Item 11</h3>
-                <input type="number" class="menuQuantity numberInput" class="numberInput">
+                <input id="item11" type="number" class="menuQuantity numberInput" class="numberInput">
                 <h3 class="menuPrice" value="5">$5.00</h3>
                 <h3 class="subTotal">PlaceHolder</h3>
             </div>
             <div class="itemRow">
                 <h3>Item 12</h3>
-                <input type="number" class="menuQuantity numberInput" class="numberInput">
+                <input id="item12" type="number" class="menuQuantity numberInput" class="numberInput">
                 <h3 class="menuPrice" value="5">$5.00</h3>
                 <h3 class="subTotal">PlaceHolder</h3>
             </div>
@@ -95,6 +95,9 @@
                 <h3 id="totalTitle" value="5">Total</h3>
                 <h3 id="totalAmount">PlaceHolder</h3>
             </div>
+            <div class ="buttonContainer">
+            <button id="checkoutButton" type="submit">Checkout</button>
+        	</div>
         </form>
     </div>
 
@@ -122,11 +125,17 @@
 </ul>
 </div>
 
+<div id= "cashbutton">
+	Pay with Cash
+</div>
+<div id= "creditbutton">
+	Pay with Credit
+</div>
 <div id="cash">
 	<h1>Cash</h1>
 	<form>
-		<label>Cash Tendered<input type="number" min="0.00" step="0.01"></input></label>
-		<input type="submit" value="Pay"></input>
+		<label>Cash Tendered<input id="item1" type="number" min="0.00" step="0.01"></input></label>
+		<input id="item1" type="submit" value="Pay"></input>
 	</form>
 	<div>
 		<p>Your change:<span></span></p>
@@ -137,17 +146,17 @@
 	<h1>Credit Card</h1>
 	<form>
 		<div>
-			<label>Card Number<input type="number"></input></label>
+			<label>Card Number<input id="item1" type="number"></input></label>
 		</div>
 		<div>
-			<label>CVV<input type="number"></input></label>
-			<label>Name<input type="text"></input></label>
+			<label>CVV<input id="item1" type="number"></input></label>
+			<label>Name<input id="item1" type="text"></input></label>
 		</div>
 		<div>
-			<label class="cardOption"><input type="radio" name="cardType">American Express</label>
-			<label class="cardOption"><input type="radio" name="cardType">Visa</label>
-			<label class="cardOption"><input type="radio" name="cardType">Mastercard</label>
-			<label class="cardOption"><input type="radio" name="cardType">Discover</label>
+			<label class="cardOption"><input id="item1" type="radio" name="cardType">American Express</label>
+			<label class="cardOption"><input id="item1" type="radio" name="cardType">Visa</label>
+			<label class="cardOption"><input id="item1" type="radio" name="cardType">Mastercard</label>
+			<label class="cardOption"><input id="item1" type="radio" name="cardType">Discover</label>
 		</div>
 		<div>
 			<label>Expiration Date
@@ -165,11 +174,11 @@
 					<option value="11">Nov</option>
 					<option value="12">Dec</option>
 				</select>
-				<input type="number"  min="2018" step="1"></input>
+				<input id="item1" type="number"  min="2018" step="1"></input>
 			</label>
 		</div>
 		<div>
-			<input type="submit" value="Charge"></input>
+			<input id="item1" type="submit" value="Charge"></input>
 		</div>
 	</form>
 </div>

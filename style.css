@@ -36,6 +36,13 @@ form {
     display: flex;
 }
 
+.buttonContainer{
+
+display: flex;
+justify-content: center;
+
+}
+
 
 
 /* cart */
@@ -58,6 +65,24 @@ form {
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+#cashbutton {
+	display: inline-block;
+  padding: 3px 12px;
+  background-color: lightblue;
+	border-radius: 3px;
+  font-family: 'verdana', sans-serif;
+}
+#creditbutton {
+  display: inline-block;
+  padding: 3px 12px;
+  background-color: lightblue;
+	border-radius: 3px;
+  font-family: 'verdana', sans-serif;
+}
+
+/* receipt */
+=======
 .totalRow {
 
     display: flex;
@@ -66,3 +91,4 @@ form {
 
 
 /* receipt */
+>>>>>>> 4dfcf4239d637ea83528da4bb29e69252fede88d
