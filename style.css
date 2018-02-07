@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #credit {
   outline: 1px solid black;
@@ -10,3 +11,52 @@
 #credit input {
   box-sizing: border-box;
 }
+=======
+#menu{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.itemName{
+
+padding-right: 80px;
+
+}
+
+h3{
+
+padding-right: 20px;
+width: 100px;
+
+}
+
+
+.numberInput{
+
+width: 100px;
+height: 20px;
+
+}
+
+form{
+
+	padding: 40px 150px 40px 150px;
+	border:1px solid black;
+
+}
+
+.itemRow{
+	justify-content: center;
+	align-items: center;
+	margin:10px;
+	display: flex;
+}
+
+.secondItemRow{
+
+padding-left: 80px;
+
+}
+>>>>>>> d89c16b805295cae6d3543c8ee9ea502f21d645f
