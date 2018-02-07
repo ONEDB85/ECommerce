@@ -63,6 +63,23 @@ function getTotal() {
   return applyTax(getSubtotal());
 }
 
+$("#menuButton").click(function() {
+  item1Count =
+  item2Count =
+  item3Count =
+  item4Count =
+  item5Count =
+  item6Count =
+  item7Count =
+  item8Count =
+  item9Count =
+  item10Count =
+  item11Count =
+  item12Count =
+  var total = getSubtotal();
+  total = applyTax(total);
+});
+
 
 
 
