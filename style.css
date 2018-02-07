@@ -36,6 +36,13 @@ form {
     display: flex;
 }
 
+.buttonContainer{
+
+display: flex;
+justify-content: center;
+
+}
+
 
 
 /* cart */
