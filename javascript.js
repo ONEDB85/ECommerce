@@ -1,17 +1,6 @@
 $(function() {
 
-
-
-    // JavaScript-y things here
-
-    // counts from the menu selection
-
     var itemQuantity;
-    $(":input").bind('keyup mouseup', function() {
-        itemQuantity = $(this).val();
-        // alert(itemQuantity);
-        console.log(itemQuantity * 5);
-    });
 
     $("#buttonItem1").click(function() {
         event.preventDefault();
@@ -67,7 +56,7 @@ $(function() {
         menuItems[11].count = parseInt($("#inputItem12").val());
     });
 
-
+// array of menu objects
     var menuItems = [{
             item: "Pint Glass",
             cat: "Housewares",
@@ -152,65 +141,69 @@ $(function() {
             price: 250,
             count: 0
         },
-
     ];
 
     var cart;
     var getSubtotal = 0;
     var tax = .06;
     var taxTotal = 0;
-    var  netTotal = 0;
+    var netTotal = 0;
+
+  // goes to cart page
     $("#checkout").click(function() {
         event.preventDefault();
         cart = menuItems.filter(function(item) {
             return item.count > 0;
         });
-        console.log(cart);
 
         cart.forEach(function(item) {
             getSubtotal += parseInt(item.count) * parseInt(item.price);
         });
-       		console.log(getSubtotal);
         taxTotal = getSubtotal * tax;
-          taxTotal = parseFloat(taxTotal.toFixed(2));
-          console.log(taxTotal);
+        taxTotal = parseFloat(taxTotal.toFixed(2));
         netTotal = getSubtotal + taxTotal;
-        console.log(netTotal);
         cart.forEach(function(item){
           $("#productQuantity").append(
             "<li>" + item.count + " " + item.item + "</li>"
           );
-
         });
         $("#cartSubTotal").text(getSubtotal);
         $("#cartTax").text(taxTotal);
         $("#cartTotal").text(netTotal);
-
+        $("#cart").toggleClass("hidden");
+        $("#menu").toggleClass("hidden");
     });
 
-    // $("#checkoutButton").click(function() {
-    //     var total = getSubtotal();
-    //     totalOwed = applyTax(total);
-    // });
-
+// goes to cash change screen
     $("#cashbutton").click(function() {
       event.preventDefault();
-      console.log("click");
       $("#cashTotal").text(netTotal);
-    })
+      $("#cart").toggleClass("hidden");
+      $("#cash").toggleClass("hidden");
+    });
 
+// goes to credit card screen
+    $("#creditbutton").click(function() {
+      event.preventDefault();
+      $("#cart").toggleClass("hidden");
+      $("#credit").toggleClass("hidden");
+    });
 
+// makes change
     var tendered = 0;
     $("#cashPay").submit(function() {
       event.preventDefault();
-      console.log("pay with cash");
       tendered = parseFloat($("#cashTendered").val());
       var change = tendered - netTotal;
-      console.log(change);
       $("#change").text(change);
     })
 
+    // print receipt button on cash page
 
-
-
+    // cc pay does nothing except show receipt
+    $("#ccPay").submit(function() {
+      event.preventDefault();
+      $("#credit").toggleClass("hidden");
+      $("#receipt").toggleClass("hidden");
+    })
 });
