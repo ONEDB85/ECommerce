@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+
 /* menu */
 
 #menu {
@@ -73,14 +76,67 @@ justify-content: center;
   padding: 3px 12px;
   background-color: lightblue;
 	border-radius: 3px;
-  font-family: 'verdana', sans-serif;
+  font-family: 'Russo One', sans-serif;
+
 }
 #creditbutton {
   display: inline-block;
   padding: 3px 12px;
   background-color: lightblue;
 	border-radius: 3px;
-  font-family: 'verdana', sans-serif;
+  font-family: 'Russo One', sans-serif;
+
 }
 
+/* Website Color, Font, border radius */
+
+body{
+  background-color: rgb(19, 232, 123);
+}
+
+h1{
+  display: inline-block;
+  color: rgb(88, 104, 214);
+  background-color: lightgrey;
+  border-radius: 5px;
+  text-align: center;
+  padding: 3px 12px;
+  font-family: 'Russo One', sans-serif;
+}
+
+h2{
+  display: inline-block;
+  color:rgb(64, 130, 208);
+  background-color: lightgrey;
+  border-radius: 5px;
+  text-align: center;
+  padding: 3px 12px;
+  font-family: 'Russo One', sans-serif;
+}
+
+h3{
+  font-family: 'Russo One', sans-serif;
+}
+
+h4{
+  display: inline-block;
+  color: rgb(127, 33, 210);
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding: 3px 12px;
+  font-family: 'Russo One', sans-serif;
+}
+
+p{
+  font-family: 'Russo One', sans-serif;
+}
+
+label{
+  font-family: 'Russo One', sans-serif;
+}
+
+ul li{
+  font-family: 'Russo One', sans-serif;
+
+}
 /* receipt */
