@@ -6,13 +6,41 @@
     align-items: center;
 }
 
+.itemInfo {
+    margin-top: 40px;
+    width: 300px;
+}
+
+.pintGlass {
+    margin-top: 0px;
+}
+
+.purchaseInfo {
+    width: 300px;
+}
+
+.itemRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.itemRow h3 {
+    display: inline-block;
+}
+
+#header {
+    display: none;
+}
+
 .menuQuantity {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 .menuPrice {
-    margin-right: 40px;
+    margin-left: 45px;
+    margin-right: 10px;
 }
 
 #totalTitle {
@@ -23,28 +51,27 @@
 .numberInput {
     width: 80px;
     height: 20px;
+    border: 1px solid grey;
 }
 
 form {
-    padding: 40px 150px 40px 150px;
+    padding: 10px 50px 40px 50px;
     border: 1px solid black;
+    text-align: center;
 }
 
-.itemRow {
-    justify-content: space-between;
-    align-items: center;
+
+.buttonContainer {
     display: flex;
+    justify-content: center;
 }
 
-.buttonContainer{
-display: flex;
-justify-content: center;
+.totalRow {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.totalRow{
-  display: flex;
-  justify-content: flex-end;
-}
+
 
 
 
@@ -69,18 +96,127 @@ justify-content: center;
 }
 
 #cashbutton {
-	display: inline-block;
-  padding: 3px 12px;
-  background-color: lightblue;
-	border-radius: 3px;
-  font-family: 'verdana', sans-serif;
-}
-#creditbutton {
-  display: inline-block;
-  padding: 3px 12px;
-  background-color: lightblue;
-	border-radius: 3px;
-  font-family: 'verdana', sans-serif;
+    display: inline-block;
+    padding: 3px 12px;
+    background-color: lightblue;
+    border-radius: 3px;
+    font-family: 'verdana', sans-serif;
 }
 
+#creditbutton {
+    display: inline-block;
+    padding: 3px 12px;
+    background-color: lightblue;
+    border-radius: 3px;
+    font-family: 'verdana', sans-serif;
+}
+
+
+
 /* receipt */
+
+@media only screen and (min-width: 768px) {
+    /* menu */
+    .itemInfo {
+        display: flex;
+        width: auto;
+        margin-top: 0px;
+    }
+
+    .purchaseInfo {
+        width: auto;
+    }
+
+
+    #header {
+        display: flex;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .itemInfo {
+        display: flex;
+    }
+
+    .itemRow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .itemRow h3 {
+        display: flex;
+    }
+
+    .menuQuantity {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .menuPrice {
+        margin-right: 40px;
+    }
+
+    #totalTitle {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .numberInput {
+        width: 80px;
+        height: 20px;
+    }
+
+    form {
+        padding: 40px 150px 40px 150px;
+        border: 1px solid black;
+    }
+
+    .itemRow {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .totalRow {
+        display: flex;
+        justify-content: flex-end;
+    }
+    /* cart */
+    /* cash  */
+    /* credit */
+    #credit {
+        outline: 1px solid black;
+    }
+
+    #credit form div {
+        display: block;
+    }
+
+    #credit input {
+        box-sizing: border-box;
+    }
+
+    #cashbutton {
+        display: inline-block;
+        padding: 3px 12px;
+        background-color: lightblue;
+        border-radius: 3px;
+        font-family: 'verdana', sans-serif;
+    }
+    #creditbutton {
+        display: inline-block;
+        padding: 3px 12px;
+        background-color: lightblue;
+        border-radius: 3px;
+        font-family: 'verdana', sans-serif;
+    }
+}
