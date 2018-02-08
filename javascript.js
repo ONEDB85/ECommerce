@@ -2,57 +2,12 @@ $(function() {
 
     var itemQuantity;
 
-    $("#buttonItem1").click(function() {
+    $(".addBasket").click(function() {
         event.preventDefault();
-        menuItems[0].count = parseInt($("#inputItem1").val());
-    });
-
-    $("#buttonItem2").click(function() {
-        event.preventDefault();
-        menuItems[1].count = parseInt($("#inputItem2").val());
-    });
-
-    $("#buttonItem3").click(function() {
-        event.preventDefault();
-        menuItems[2].count = parseInt($("#inputItem3").val());
-    });
-
-    $("#buttonItem4").click(function() {
-        event.preventDefault();
-        menuItems[3].count = parseInt($("#inputItem4").val());
-    });
-
-    $("#buttonItem5").click(function() {
-        event.preventDefault();
-        menuItems[4].count = parseInt($("#inputItem5").val());
-    });
-    $("#buttonItem6").click(function() {
-        event.preventDefault();
-        menuItems[5].count = parseInt($("#inputItem6").val());
-    });
-    $("#buttonItem7").click(function() {
-        event.preventDefault();
-        menuItems[6].count = parseInt($("#inputItem7").val());
-    });
-    $("#buttonItem8").click(function() {
-        event.preventDefault();
-        menuItems[7].count = parseInt($("#inputItem8").val());
-    });
-    $("#buttonItem9").click(function() {
-        event.preventDefault();
-        menuItems[8].count = parseInt($("#inputItem9").val());
-    });
-    $("#buttonItem10").click(function() {
-        event.preventDefault();
-        menuItems[9].count = parseInt($("#inputItem10").val());
-    });
-    $("#buttonItem11").click(function() {
-        event.preventDefault();
-        menuItems[10].count = parseInt($("#inputItem11").val());
-    });
-    $("#buttonItem12").click(function() {
-        event.preventDefault();
-        menuItems[11].count = parseInt($("#inputItem12").val());
+        var inputEl = $(this).parent().find("input");
+        var productNum = parseInt(inputEl.attr("data-product-num"));
+        var count = parseInt(inputEl.val());
+        menuItems[productNum].count = count;
     });
 
 // array of menu objects
@@ -143,29 +98,28 @@ $(function() {
     ];
 
     var cart;
-    var getSubtotal = 0;
+    var subtotal = 0;
     var tax = .06;
     var taxTotal = 0;
     var netTotal = 0;
 
   // goes to cart page
     $("#checkout").click(function() {
-        event.preventDefault();
         cart = menuItems.filter(function(item) {
             return item.count > 0;
         });
         cart.forEach(function(item) {
-            getSubtotal += parseInt(item.count) * parseInt(item.price);
+            subtotal += parseInt(item.count) * parseInt(item.price);
         });
-        taxTotal = getSubtotal * tax;
+        taxTotal = subtotal * tax;
         taxTotal = parseFloat(taxTotal.toFixed(2));
-        netTotal = getSubtotal + taxTotal;
+        netTotal = subtotal + taxTotal;
         cart.forEach(function(item){
           $("#productQuantity").append(
             "<li>" + item.count + " " + item.item + "</li>"
           );
         });
-        $("#cartSubTotal").text(getSubtotal);
+        $("#cartSubTotal").text(subtotal);
         $("#cartTax").text(taxTotal);
         $("#cartTotal").text(netTotal);
         $("#cart").toggleClass("hidden");
