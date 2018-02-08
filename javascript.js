@@ -153,6 +153,9 @@ $(function() {
 
     var cart;
     var getSubtotal = 0;
+    var tax = .06;
+    var taxTotal = 0;
+    var  netTotal = 0;
     $("#checkout").click(function() {
         event.preventDefault();
         cart = menuItems.filter(function(item) {
@@ -164,7 +167,21 @@ $(function() {
             getSubtotal += parseInt(item.count) * parseInt(item.price);
         });
        		console.log(getSubtotal);
-        
+        taxTotal = getSubtotal * tax;
+          taxTotal = parseFloat(taxTotal.toFixed(2));
+          console.log(taxTotal);
+        netTotal = getSubtotal + taxTotal;
+        console.log(netTotal);
+        cart.forEach(function(item){
+          $("#productQuantity").append(
+            "<li>" + item.count + " " + item.item + "</li>"
+          );
+
+        });
+        $("#cartSubTotal").text(getSubtotal);
+        $("#cartTax").text(taxTotal);
+        $("#cartTotal").text(netTotal);
+
     });
 
     function applyTax(preTaxTotal) {
