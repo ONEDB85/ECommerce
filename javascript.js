@@ -11,84 +11,161 @@ $(function() {
         itemQuantity = $(this).val();
         // alert(itemQuantity);
         console.log(itemQuantity * 5);
-
     });
+
+    $("#buttonItem1").click(function() {
+        event.preventDefault();
+        menuItems[0].count = parseInt($("#inputItem1").val());
+    });
+
+
+    $("#buttonItem2").click(function() {
+        event.preventDefault();
+        menuItems[1].count = parseInt($("#inputItem2").val());
+    });
+
+    $("#buttonItem3").click(function() {
+        event.preventDefault();
+        menuItems[2].count = parseInt($("#inputItem3").val());
+    });
+
+    $("#buttonItem4").click(function() {
+        event.preventDefault();
+        menuItems[3].count = parseInt($("#inputItem4").val());
+    });
+
+    $("#buttonItem5").click(function() {
+        event.preventDefault();
+        menuItems[4].count = parseInt($("#inputItem5").val());
+    });
+    $("#buttonItem6").click(function() {
+        event.preventDefault();
+        menuItems[5].count = parseInt($("#inputItem6").val());
+    });
+    $("#buttonItem7").click(function() {
+        event.preventDefault();
+        menuItems[6].count = parseInt($("#inputItem7").val());
+    });
+    $("#buttonItem8").click(function() {
+        event.preventDefault();
+        menuItems[7].count = parseInt($("#inputItem8").val());
+    });
+    $("#buttonItem9").click(function() {
+        event.preventDefault();
+        menuItems[8].count = parseInt($("#inputItem9").val());
+    });
+    $("#buttonItem10").click(function() {
+        event.preventDefault();
+        menuItems[9].count = parseInt($("#inputItem10").val());
+    });
+    $("#buttonItem11").click(function() {
+        event.preventDefault();
+        menuItems[10].count = parseInt($("#inputItem11").val());
+    });
+    $("#buttonItem12").click(function() {
+        event.preventDefault();
+        menuItems[11].count = parseInt($("#inputItem12").val());
+    });
+
+
+
 
 
     // these need ids for assignment later
     // assign these values on click of checkout button
 
     var menuItems = [{
-            Item: “Name1”,
-            Price: 1
+            item: "Name1",
+            price: 1,
+            count: 0
         },
         {
-            Item: “Name2”,
-            Price: 2
+            item: "Name2",
+            price: 2,
+            count: 0
         },
         {
-            Item: “Name3”,
-            Price: 3
+            item: "Name3",
+            price: 3,
+            count: 0
         },
         {
-            Item: “Name4”,
-            Price: 4
+            item: "Name4",
+            price: 4,
+            count: 0
         },
         {
-            Item: “Name5”,
-            Price: 5
+            item: "Name5",
+            price: 5,
+            count: 0
         },
         {
-            Item: “Name6”,
-            Price: 6
+            item: "Name6",
+            price: 6,
+            count: 0
         },
         {
-            Item: “Name7”,
-            Price: 7
+            item: "Name7",
+            price: 7,
+            count: 0
         },
         {
-            Item: “Name8”,
-            Price: 8
+            item: "Name8",
+            price: 8,
+            count: 0
         },
         {
-            Item: “Name9”,
-            Price: 9
+            item: "Name9",
+            price: 9,
+            count: 0
         },
         {
-            Item: “Name10”,
-            Price: 10
+            item: "Name10",
+            price: 10,
+            count: 0
         },
         {
-            Item: “Name11”,
-            Price: 11
+            item: "Name11",
+            price: 11,
+            count: 0
         },
         {
-            Item: “Name12”,
-            Price: 12
+            item: "Name12",
+            price: 12,
+            count: 0
         },
 
     ];
 
-    itemCounts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-
-    // intialize prices variables
 
 
-    // set prices in JavaScript
-    itemPrices = [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5];
+    // var salesTax = 0.06;
+    // var totalOwed;
 
-    // non item variables
-    var salesTax = 0.06;
-    var totalOwed;
+    // function getSubtotal() {
+    //     // for (i = 0; i < 12; i++) {
 
-    function getSubtotal() {
-        // for (i = 0; i < 12; i++) {
+    //     // }
 
-        // }
+    //     (5 * 5);
 
-        (5 * 5);
+    // }
 
-    }
+    var cart;
+    var getSubtotal = 0;
+    $("#checkout").click(function() {
+        event.preventDefault();
+        cart = menuItems.filter(function(item) {
+            return item.count > 0;
+        });
+        console.log(cart);
+
+        cart.forEach(function(item) {
+            getSubtotal += parseInt(item.count) * parseInt(item.price);
+        });
+       		console.log(getSubtotal);
+        
+    });
 
     function applyTax(preTaxTotal) {
         return preTaxTotal + preTaxTotal * salesTax;
