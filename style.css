@@ -37,10 +37,13 @@ form {
 }
 
 .buttonContainer{
-
 display: flex;
 justify-content: center;
+}
 
+.totalRow{
+  display: flex;
+  justify-content: flex-end;
 }
 
 
