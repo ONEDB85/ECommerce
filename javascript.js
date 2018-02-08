@@ -68,88 +68,92 @@ $(function() {
     });
 
 
-
-
-
-    // these need ids for assignment later
-    // assign these values on click of checkout button
-
     var menuItems = [{
-            item: "Name1",
+            item: "Pint Glass",
+            cat: "Housewares",
+            desc: "",
             price: 1,
             count: 0
         },
         {
-            item: "Name2",
-            price: 2,
-            count: 0
-        },
-        {
-            item: "Name3",
-            price: 3,
-            count: 0
-        },
-        {
-            item: "Name4",
-            price: 4,
-            count: 0
-        },
-        {
-            item: "Name5",
+            item: "Ceramic Mug",
+            cat: "Housewares",
+            desc: "",
             price: 5,
             count: 0
         },
         {
-            item: "Name6",
-            price: 6,
-            count: 0
-        },
-        {
-            item: "Name7",
-            price: 7,
-            count: 0
-        },
-        {
-            item: "Name8",
-            price: 8,
-            count: 0
-        },
-        {
-            item: "Name9",
-            price: 9,
-            count: 0
-        },
-        {
-            item: "Name10",
+            item: "Travel Mug",
+            cat: "Housewares",
+            desc: "",
             price: 10,
             count: 0
         },
         {
-            item: "Name11",
-            price: 11,
+            item: "T-Shirt",
+            cat: "Apparel",
+            desc: "",
+            price: 4,
             count: 0
         },
         {
-            item: "Name12",
-            price: 12,
+            item: "Sweatshirt",
+            cat: "Apparel",
+            desc: "",
+            price: 13,
+            count: 0
+        },
+        {
+            item: "Tank Top",
+            cat: "Apparel",
+            desc: "",
+            price: 7,
+            count: 0
+        },
+        {
+            item: "Knit Hat",
+            cat: "Apparel",
+            desc: "",
+            price: 20,
+            count: 0
+        },
+        {
+            item: "Baseball Cap",
+            cat: "Apparel",
+            desc: "",
+            price: 35,
+            count: 0
+        },
+        {
+            item: "Poster",
+            cat: "Furnishings",
+            desc: "",
+            price: 8,
+            count: 0
+        },
+        {
+            item: "Headphones",
+            cat: "Electronics",
+            desc: "",
+            price: 25,
+            count: 0
+        },
+        {
+            item: "MP3 Player",
+            cat: "Electronics",
+            desc: "",
+            price: 67,
+            count: 0
+        },
+        {
+            item: "Tablet",
+            cat: "Electronics",
+            desc: "",
+            price: 250,
             count: 0
         },
 
     ];
-
-
-
-    // var salesTax = 0.06;
-    // var totalOwed;
-
-    // function getSubtotal() {
-    //     // for (i = 0; i < 12; i++) {
-
-    //     // }
-
-    //     (5 * 5);
-
-    // }
 
     var cart;
     var getSubtotal = 0;
@@ -184,60 +188,27 @@ $(function() {
 
     });
 
-    function applyTax(preTaxTotal) {
-        return preTaxTotal + preTaxTotal * salesTax;
-    }
+    // $("#checkoutButton").click(function() {
+    //     var total = getSubtotal();
+    //     totalOwed = applyTax(total);
+    // });
 
-    function getTotal() {
-        // return applyTax(getSubtotal());
-    }
-
-    $("#checkoutButton").click(function() {
-        var total = getSubtotal();
-        totalOwed = applyTax(total);
-    });
+    $("#cashbutton").click(function() {
+      event.preventDefault();
+      console.log("click");
+      $("#cashTotal").text(netTotal);
+    })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    var tendered = 0;
+    $("#cashPay").submit(function() {
+      event.preventDefault();
+      console.log("pay with cash");
+      tendered = parseFloat($("#cashTendered").val());
+      var change = tendered - netTotal;
+      console.log(change);
+      $("#change").text(change);
+    })
 
 
 
