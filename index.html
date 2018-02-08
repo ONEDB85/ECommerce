@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <center>
-        <h1>Menu</h1></center>
     <div id="menu">
+      <center>
+          <h1>Menu</h1></center>
         <form>
             <div class="itemRow">
                 <h2 class="itemName">Name</h2>
@@ -99,7 +99,7 @@
     </div>
 
 
-<div id="cart">
+<div id="cart" class="hidden">
 <h1>Shopping Cart</h1>
 <h2>Product & Quantity</h2>
 <ul id= "productQuantity">
@@ -113,15 +113,17 @@
   <h4>Total</h4>
   <li id= "cartTotal"><li>
 </ul>
-</div>
-
 <div id= "cashbutton">
 	Pay with Cash
 </div>
 <div id= "creditbutton">
 	Pay with Credit
 </div>
-<div id="cash">
+</div>
+
+
+
+<div id="cash" class="hidden">
 	<h1>Total Owed:</h1>
   <p id="cashTotal">Cash goes here</p>
 	<form id="cashPay">
@@ -131,9 +133,10 @@
 	<div>
 		<p>Your change:<span id="change"></span></p>
 	</div>
+  <div id="toReceipt">Print Receipt</div>
 </div>
 
-<div id="credit">
+<div id="credit" class="hidden">
 	<h1>Credit Card</h1>
 	<form id="ccPay">
 		<div>
@@ -174,7 +177,7 @@
 	</form>
 </div>
 
-<div id="receipt">
+<div id="receipt" class="hidden">
 <h1>Receipt</h1>
 <ul>
 	<h4>Product</h4>

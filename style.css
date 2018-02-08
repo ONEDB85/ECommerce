@@ -1,9 +1,14 @@
 /* menu */
 
+
 #menu {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hidden {
+  display: none !important; 
 }
 
 .menuQuantity {

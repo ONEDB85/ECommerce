@@ -7,7 +7,6 @@ $(function() {
         menuItems[0].count = parseInt($("#inputItem1").val());
     });
 
-
     $("#buttonItem2").click(function() {
         event.preventDefault();
         menuItems[1].count = parseInt($("#inputItem2").val());
@@ -155,7 +154,6 @@ $(function() {
         cart = menuItems.filter(function(item) {
             return item.count > 0;
         });
-
         cart.forEach(function(item) {
             getSubtotal += parseInt(item.count) * parseInt(item.price);
         });
@@ -199,6 +197,10 @@ $(function() {
     })
 
     // print receipt button on cash page
+    $("#toReceipt").click(function() {
+      $("#cash").toggleClass("hidden");
+      $("#receipt").toggleClass("hidden");
+    });
 
     // cc pay does nothing except show receipt
     $("#ccPay").submit(function() {
