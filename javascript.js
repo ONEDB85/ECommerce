@@ -170,6 +170,7 @@ $(function() {
         $("#cartTotal").text(netTotal);
         $("#cart").toggleClass("hidden");
         $("#menu").toggleClass("hidden");
+        buildReceipt();
     });
 
 // goes to cash change screen
@@ -193,7 +194,10 @@ $(function() {
       event.preventDefault();
       tendered = parseFloat($("#cashTendered").val());
       var change = tendered - netTotal;
-      $("#change").text(change);
+      change = parseFloat(change.toFixed(2));
+      $("#change").text(change.toFixed(2));
+      $("#changeOutput").toggleClass("hidden");
+      $("#toReceipt").toggleClass("hidden");
     })
 
     // print receipt button on cash page
@@ -208,4 +212,12 @@ $(function() {
       $("#credit").toggleClass("hidden");
       $("#receipt").toggleClass("hidden");
     })
+
+    function buildReceipt() {
+      cart.forEach(function(product) {
+        for (i = 0; i < product.count; i++) {
+          $("#receipt").append("<p> " + product.item + "</p>");
+        }
+      });
+    }
 });
