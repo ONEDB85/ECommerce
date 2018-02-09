@@ -137,7 +137,6 @@ $(function() {
 
 // goes to credit card screen
     $("#creditbutton").click(function() {
-      event.preventDefault();
       $("#cart").toggleClass("hidden");
       $("#credit").toggleClass("hidden");
     });
@@ -145,7 +144,6 @@ $(function() {
 // makes change
     var tendered = 0;
     $("#cashPay").click(function() {
-      event.preventDefault();
       tendered = parseFloat($("#cashTendered").val());
       var change = tendered - netTotal;
       change = parseFloat(change.toFixed(2));
@@ -161,8 +159,7 @@ $(function() {
     });
 
     // cc pay does nothing except show receipt
-    $("#ccPay").submit(function() {
-      event.preventDefault();
+    $("#ccPay").click(function() {
       $("#credit").toggleClass("hidden");
       $("#receipt").toggleClass("hidden");
     })
@@ -170,8 +167,11 @@ $(function() {
     function buildReceipt() {
       cart.forEach(function(product) {
         for (i = 0; i < product.count; i++) {
-          $("#receipt").append("<p> " + product.item + "</p>");
+          $("#receipt").append("<p> " + product.item + " - $" + product.price + "</p>");
         }
       });
+      $("#receipt").append("<p> subtotal: $" + subtotal + "</p>");
+      $("#receipt").append("<p> tax: $" + taxTotal + "</p>");
+      $("#receipt").append("<p> total: $" + netTotal + "</p>");
     }
 });

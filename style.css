@@ -12,23 +12,29 @@ body {
     align-items: center;
 }
 
+.hidden {
+  display: none !important;
+}
 
-/* cart styles */
-#cart{
+
+/* class styles for all pop-ups */
+.window {
  border: 1px solid black;
  box-shadow: 0px 0px 31px 1px;
  box-sizing: border-box;
  width: 98%;
  margin: 0 auto;
+ margin-top: 30px;
 }
 
-#cart h1 {
+.window h1 {
   background-color: #FFB095;
   display: block;
   border-radius: 0;
   margin: 0 auto;
 }
 
+/* cart styles */
 #cart h2 {
   margin: 0 auto;
   text-align: center;
@@ -59,33 +65,103 @@ body {
   border-radius: 3px;
   font-family: 'Russo One', sans-serif;
   box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+  height: 40px;
+  line-height: 40px;
 }
 
-/* cash payment styles */
-#cash h1 {
-  background-color: #FFB095;
-  box-sizing: border-box;
-  width: 100%;
-  border-radius: 0;
-  margin: 0;
+#cash > div {
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+#cash label, p {
+  display: block;
+  text-align: center;
 }
 
 #cash input {
   display: block;
+  box-sizing: border-box;
   width: 95%;
   margin: 10px auto;
+  height: 40px;
+  font-size: 35px;
 }
 
 #cash input[type=button] {
   background-color: #65FEB4;
+  box-sizing: border-box;
   font-family: 'Russo One', sans-serif;
   padding: 3px 12px;
   text-transform: uppercase;
   color: white;
+  height: 40px;
+  font-size: 24px;
 }
 
 #cashPay {
   padding-top: 15px;
+}
+
+/* credit card styles */
+#credit form {
+  box-shadow: none;
+  border: none;
+  padding-top: 10px;
+}
+
+#cvv, #ccname, #cardNumber  {
+  display: block;
+  width: 95%;
+  height: 40px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+#credit select {
+  background-color: #FFB095;
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  width: 30%;
+}
+
+#credit label {
+  display: block;
+}
+
+.cardOption {
+  display: block;
+  text-align: left;
+}
+
+.cardOption input, .cardOption label{
+  display: inline-block;
+  padding-left: 20px;
+}
+
+
+#ccPay {
+  background-color: #65FEB4;
+  box-sizing: border-box;
+  font-family: 'Russo One', sans-serif;
+  padding: 3px 12px;
+  text-transform: uppercase;
+  color: white;
+  height: 40px;
+  font-size: 24px;
+  margin: 10px auto;
+  width: 95%;
+}
+
+/* receipt style */
+
+#receipt p {
+  background-color: white;
+  width: 300px;
+  font-family: monospace;
+  margin: 0 auto;
+  opacity: .8;
 }
 
 .itemInfo {
@@ -115,9 +191,7 @@ body {
     display: none;
   }
 
-.hidden {
-  display: none !important;
-}
+
 
 .menuQuantity {
     margin-left: 10px;
