@@ -10,18 +10,17 @@
 
 <body>
     <div id="menu">
-
-        <form>
+        <div class="mainContainer">
             <div id="header" class="itemRow">
                 <h2 class="itemName">Name</h2>
-                <h2 class="menuQuantity">Quantity</h2>
                 <h2 class="menuPrice">Price</h2>
-                <h2>Placeholder</h2>
+                <h2 class="menuQuanity">Quantity</h2>
+                <h2>Add to Cart</h2>
             </div>
             <div class="itemRow">
                 <div class="itemInfo pintGlass">
-                    <h3>Pint Glass</h3>
-                    <h3 id="priceItem1" class="menuPrice" value="1">$1.00</h3>
+                    <a id="images" href="images/pintglass.jpg"><h3>Pint Glass</h3></a>
+                    <h3 id="priceItem1" class="menuPrice">$1.00</h3>
                 </div>
                 <div class="purchaseInfo">
                     <input data-product-num="0" type="number" class="menuQuantity numberInput">
@@ -30,8 +29,8 @@
             </div>
             <div class="itemRow">
                 <div class="itemInfo">
-                    <h3>Ceramic Mug</h3>
-                    <h3 id="priceItem2" class="menuPrice" value="2">$5.00</h3>
+                    <a id="images" href="images/ceramicmug.jpg"><h3>Ceramic Mug</h3></a>
+                    <h3 id="priceItem2" class="menuPrice">$5.00</h3>
                 </div>
                 <div class="purchaseInfo">
                     <input data-product-num="1" type="number" class="menuQuantity numberInput" class="numberInput">
@@ -40,8 +39,8 @@
             </div>
             <div class="itemRow">
                 <div class="itemInfo">
-                    <h3>Travel Mug</h3>
-                    <h3 id="priceItem3" class="menuPrice" value="3">$10.00</h3>
+                    <a id="images" href="images/travelmug.jpg"><h3>Travel Mug</h3></a>
+                    <h3 id="priceItem3" class="menuPrice">$10.00</h3>
                 </div>
                 <div class="purchaseInfo">
                     <input data-product-num="2" type="number" class="menuQuantity numberInput" class="numberInput">
@@ -50,8 +49,8 @@
             </div>
             <div class="itemRow">
                 <div class="itemInfo">
-                    <h3>T-Shirt</h3>
-                    <h3 id="priceItem4" class="menuPrice" value="4">$4.00</h3>
+                    <a id="images" href="images/tshirt.jpg"><h3>T-Shirt</h3></a>
+                    <h3 id="priceItem4" class="menuPrice">$4.00</h3>
                 </div>
                 <div class="purchaseInfo">
                     <input data-product-num="3" type="number" class="menuQuantity numberInput" class="numberInput">
@@ -60,8 +59,8 @@
             </div>
             <div class="itemRow">
                 <div class="itemInfo">
-                    <h3>Sweatshirt</h3>
-                    <h3 id="priceItem5" class="menuPrice" value="5">$13.00</h3></div>
+                    <a id="images" href="images/sweatshirt.jpg"><h3>Sweatshirt</h3></a>
+                    <h3 id="priceItem5" class="menuPrice">$13.00</h3></div>
                 <div class="purchaseInfo">
                     <input data-product-num="4" type="number" class="menuQuantity numberInput" class="numberInput">
                     <button class="addBasket">Add to Basket</button>
@@ -69,8 +68,8 @@
             </div>
             <div class="itemRow">
                 <div class="itemInfo">
-                    <h3>Tank Top</h3>
-                    <h3 id="priceItem6" class="menuPrice" value="6">$7.00</h3></div>
+                    <a id="images" href="images/tanktop.jpg"><h3>Tank Top</h3></a>
+                    <h3 id="priceItem6" class="menuPrice">$7.00</h3></div>
                 <div class="purchaseInfo">
                     <input data-product-num="5" type="number" class="menuQuantity numberInput" class="numberInput">
                     <button class="addBasket">Add to Basket</button>
@@ -78,8 +77,8 @@
             </div>
             <div class="itemRow">
                 <div class="itemInfo">
-                    <h3>Knit Hat</h3>
-                    <h3 id="priceItem7" class="menuPrice" value="7">$20.00</h3></div>
+                    <a id="images" href="images/knithat.jpg"><h3>Knit Hat</h3></a>
+                    <h3 id="priceItem7" class="menuPrice">$20.00</h3></div>
                 <div class="purchaseInfo">
                     <input data-product-num="6" type="number" class="menuQuantity numberInput" class="numberInput">
                     <button class="addBasket">Add to Basket</button>
@@ -87,8 +86,8 @@
             </div>
             <div class="itemRow">
                 <div class="itemInfo">
-                    <h3>Baseball Cap</h3>
-                    <h3 id="priceItem8" class="menuPrice" value="8">$35.00</h3></div>
+                    <a id="images" href="images/baseballcap.jpg"><h3>B-ball Cap</h3></a>
+                    <h3 id="priceItem8" class="menuPrice">$35.00</h3></div>
                 <div class="purchaseInfo">
                     <input data-product-num="7" type="number" class="menuQuantity numberInput" class="numberInput">
                     <button class="addBasket">Add to Basket</button>
@@ -96,8 +95,8 @@
             </div>
             <div class="itemRow">
                 <div class="itemInfo">
-                    <h3>Poster</h3>
-                    <h3 id="priceItem9" class="menuPrice" value="9">$8.00</h3></div>
+                    <a id="images" href="images/poster.jpg"><h3>Poster</h3></a>
+                    <h3 id="priceItem9" class="menuPrice">$8.00</h3></div>
                 <div class="purchaseInfo">
                     <input data-product-num="8" type="number" class="menuQuantity numberInput" class="numberInput">
                     <button class="addBasket">Add to Basket</button>
@@ -105,8 +104,8 @@
             </div>
             <div class="itemRow">
                 <div class="itemInfo">
-                    <h3>Headphones</h3>
-                    <h3 id="priceItem10" class="menuPrice" value="10">$25.00</h3></div>
+                    <a id="images" href="images/headphones.jpg"><h3>Headphones</h3></a>
+                    <h3 id="priceItem10" class="menuPrice">$25.00</h3></div>
                 <div class="purchaseInfo">
                     <input data-product-num="9" type="number" class="menuQuantity numberInput" class="numberInput">
                     <button class="addBasket">Add to Basket</button>
@@ -114,8 +113,8 @@
             </div>
             <div class="itemRow">
                 <div class="itemInfo">
-                    <h3>MP3 Player</h3>
-                    <h3 id="priceItem11" class="menuPrice" value="11">$67.00</h3></div>
+                    <a id="images" href="images/mp3player.jpg"><h3>MP3 Player</h3></a>
+                    <h3 id="priceItem11" class="menuPrice">$67.00</h3></div>
                 <div class="purchaseInfo">
                     <input data-product-num="10" type="number" class="menuQuantity numberInput" class="numberInput">
                     <button class="addBasket">Add to Basket</button>
@@ -123,16 +122,103 @@
             </div>
             <div class="itemRow">
                 <div class="itemInfo">
-                    <h3>Tablet</h3>
-                    <h3 id="priceItem12" class="menuPrice" value="12">$250.00</h3></div>
+                    <a id="images" href="images/tablet.jpg"><h3>Tablet</h3></a>
+                    <h3 id="priceItem12" class="menuPrice">$250.00</h3></div>
                 <div class="purchaseInfo">
                     <input data-product-num="11" type="number" class="menuQuantity numberInput" class="numberInput">
                     <button class="addBasket">Add to Basket</button>
                 </div>
             </div>
             <button type="button" id="checkout" class="addBasket">Checkout</button>
+        </div>
+    </div>
+    <div id="cart" class="hidden">
+        <h1>Shopping Cart</h1>
+        <h2>Product & Quantity</h2>
+        <ul id="productQuantity">
+        </ul>
+        <ul>
+            <h4>Subtotal: $<span id= "cartSubTotal"></span></h4>
+            <h4>Tax: $<span id= "cartTax"></span></h4>
+            <h4>Total: $<span id= "cartTotal"></span></h4>
+        </ul>
+        <div id="cashbutton" class="cartButtons">
+            Pay with Cash
+        </div>
+        <div id="creditbutton" class="cartButtons">
+            Pay with Credit
+        </div>
+    </div>
+    <div id="cash" class="hidden">
+        <h1>Total Owed: $<span id="cashTotal">CASH</span></h1>
+        <form>
+            <label>Cash Tendered
+                <input id="cashTendered" type="number" min="0.00" step="0.01">
+            </label>
+            <input id="cashPay" type="button" value="Pay">
+        </form>
+        <div>
+            <p id="changeOutput" class="hidden">Your change: $<span id="change"></span></p>
+        </div>
+        <div id="toReceipt" class="hidden">Print Receipt</div>
+    </div>
+    <div id="credit" class="hidden">
+        <h1>Credit Card</h1>
+        <form id="ccPay">
+            <div>
+                <label>Card Number
+                    <input id="inputItem1" type="number" required>
+                </label>
+            </div>
+            <div>
+                <label>CVV
+                    <input id="inputItem1" type="number" required>
+                </label>
+                <label>Name
+                    <input id="inputItem1" type="text" required>
+                </label>
+            </div>
+            <div>
+                <label class="cardOption">
+                    <input id="inputItem1" type="radio" name="cardType" required>American Express</label>
+                <label class="cardOption">
+                    <input id="inputItem1" type="radio" name="cardType">Visa</label>
+                <label class="cardOption">
+                    <input id="inputItem1" type="radio" name="cardType">Mastercard</label>
+                <label class="cardOption">
+                    <input id="inputItem1" type="radio" name="cardType">Discover</label>
+            </div>
+            <div>
+                <label>Expiration Date
+                    <select required>
+                        <option value="01">Jan</option>
+                        <option value="02">Feb</option>
+                        <option value="03">Mar</option>
+                        <option value="04">Apr</option>
+                        <option value="05">May</option>
+                        <option value="06">Jun</option>
+                        <option value="07">Jul</option>
+                        <option value="08">Aug</option>
+                        <option value="09">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+                    <input id="Year" type="number" min="2018" step="1" required>
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Charge"></input>
+            </div>
         </form>
     </div>
+    <div id="receipt" class="hidden">
+        <p>receipt goes here</p>
+    </div>
+    <script src="jquery-3.3.1.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
 
 <div id="cart" class="window hidden">
   <h1>Shopping Cart</h1>

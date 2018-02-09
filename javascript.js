@@ -14,7 +14,7 @@ $(function() {
     var menuItems = [{
             item: "Pint Glass",
             cat: "Housewares",
-            desc: "",
+            desc: "clear glass",
             price: 1,
             count: 0
         },
@@ -163,6 +163,34 @@ $(function() {
       $("#credit").toggleClass("hidden");
       $("#receipt").toggleClass("hidden");
     })
+
+// $( "#outer" ).mouseleave(function() {
+//   $( "#log" ).append( "<div>Handler for .mouseleave() called.</div>" );
+// });
+
+// $("#images").mouseenter(function(){
+//     $( "#images" ).mouseenter(function() {
+//   $(this).append( '<div>Handler for .mouseenter() called.</div>' );
+// });
+    
+//     $( "#images" ).mouseleave(function() {
+//   $(this).addclass("hoverDescrip");
+// });
+//     if(!block) {
+//         block = true;
+//         $(this).append( '<div>Handler for .mouseenter() called.</div>' ).slideDown(400, function(){
+//             block = false;
+//         });
+//     }
+// });
+// $("#images").mouseleave(function(){
+//     if(!block) {
+//         block = true;
+//         $(this).append( '<div>Handler for .mouseenter() called.</div>' ).slideUp(400, function(){
+//             block = false;
+//         });
+//     }
+// });
 
     function buildReceipt() {
       cart.forEach(function(product) {
