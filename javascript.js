@@ -116,12 +116,12 @@ $(function() {
         netTotal = subtotal + taxTotal;
         cart.forEach(function(item){
           $("#productQuantity").append(
-            "<li>" + item.count + " " + item.item + "</li>"
+            "<li>" + item.count + " - " + item.item + "</li>"
           );
         });
-        $("#cartSubTotal").text(subtotal);
-        $("#cartTax").text(taxTotal);
-        $("#cartTotal").text(netTotal);
+        $("#cartSubTotal").text(subtotal.toFixed(2));
+        $("#cartTax").text(taxTotal.toFixed(2));
+        $("#cartTotal").text(netTotal.toFixed(2));
         $("#cart").toggleClass("hidden");
         $("#menu").toggleClass("hidden");
         buildReceipt();
@@ -144,7 +144,7 @@ $(function() {
 
 // makes change
     var tendered = 0;
-    $("#cashPay").submit(function() {
+    $("#cashPay").click(function() {
       event.preventDefault();
       tendered = parseFloat($("#cashTendered").val());
       var change = tendered - netTotal;

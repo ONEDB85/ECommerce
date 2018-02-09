@@ -10,8 +10,7 @@
 
 <body>
     <div id="menu">
-      <center>
-          <h1>Menu</h1></center>
+
         <form>
             <div id="header" class="itemRow">
                 <h2 class="itemName">Name</h2>
@@ -136,36 +135,31 @@
     </div>
 
 <div id="cart" class="hidden">
-<h1>Shopping Cart</h1>
-<h2>Product & Quantity</h2>
-<ul id= "productQuantity">
-</ul>
-<h4>Total</h4>
-<ul>
-	<h4>Subtotal</h4>
-  <li id= "cartSubTotal"><li>
-  <h4>Tax</h4>
-  <li id= "cartTax"><li>
-  <h4>Total</h4>
-  <li id= "cartTotal">
-</ul>
-<div id= "cashbutton">
-	Pay with Cash
-</div>
-<div id= "creditbutton">
-	Pay with Credit
-</div>
+  <h1>Shopping Cart</h1>
+  <h2>Product & Quantity</h2>
+  <ul id= "productQuantity">
+  </ul>
+  <ul>
+  	<h4>Subtotal: $<span id= "cartSubTotal"></span></h4>
+    <h4>Tax: $<span id= "cartTax"></span></h4>
+    <h4>Total: $<span id= "cartTotal"></span></h4>
+  </ul>
+  <div id= "cashbutton" class="cartButtons">
+  	Pay with Cash
+  </div>
+  <div id= "creditbutton" class="cartButtons">
+  	Pay with Credit
+  </div>
 </div>
 
 
 
 
 <div id="cash" class="hidden">
-	<h1>Total Owed:</h1>
-  <p id="cashTotal">Cash goes here</p>
-	<form id="cashPay">
+	<h1>Total Owed: $<span id="cashTotal">CASH</span></h1>
+	<form >
 		<label>Cash Tendered <input id="cashTendered" type="number" min="0.00" step="0.01"></label>
-		<input  type="submit" value="Pay">
+		<input id="cashPay"  type="button" value="Pay">
 	</form>
 	<div>
 		<p id="changeOutput" class="hidden">Your change: $<span id="change"></span></p>

@@ -2,16 +2,90 @@
 
 
 /* menu */
-
+body {
+  margin: 0;
+}
 
 #menu {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+/* cart styles */
 #cart{
  border: 1px solid black;
- box-shadow: 0px 0px 31px 1px  
+ box-shadow: 0px 0px 31px 1px;
+ box-sizing: border-box;
+ width: 98%;
+ margin: 0 auto;
+}
+
+#cart h1 {
+  background-color: #FFB095;
+  display: block;
+  border-radius: 0;
+  margin: 0 auto;
+}
+
+#cart h2 {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  background-color: #65FEB4;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+#cart h4 {
+  display: block;
+  text-align: right;
+  margin: 0 10px 0 0;
+}
+
+#cart span {
+  display: inline-block;
+  width: 18%;
+}
+
+#cart .cartButtons {
+  box-sizing: border-box;
+  width: 95%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 3px 12px;
+  background-color: #FFB095;
+  border-radius: 3px;
+  font-family: 'Russo One', sans-serif;
+  box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+}
+
+/* cash payment styles */
+#cash h1 {
+  background-color: #FFB095;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0;
+  margin: 0;
+}
+
+#cash input {
+  display: block;
+  width: 95%;
+  margin: 10px auto;
+}
+
+#cash input[type=button] {
+  background-color: #65FEB4;
+  font-family: 'Russo One', sans-serif;
+  padding: 3px 12px;
+  text-transform: uppercase;
+  color: white;
+}
+
+#cashPay {
+  padding-top: 15px;
 }
 
 .itemInfo {
@@ -67,10 +141,11 @@
 }
 
 form {
-  padding: 10px 50px 40px 50px;
+
   border: 1px solid black;
   text-align: center;
-  box-shadow: 0px 0px 31px 1px
+  box-shadow: 0px 0px 31px 1px;
+  box-sizing: border-box;
 }
 
 
@@ -108,25 +183,6 @@ form {
     box-sizing: border-box;
 }
 
-#cashbutton {
-
-	display: inline-block;
-  padding: 3px 12px;
-  background-color: #FFB095;
-	border-radius: 3px;
-  font-family: 'Russo One', sans-serif;
-  box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
-}
-
-#creditbutton {
-
-  display: inline-block;
-  padding: 3px 12px;
-  background-color: #FFB095;
-	border-radius: 3px;
-  font-family: 'Russo One', sans-serif;
-  box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
-}
 
 /* Website Color, Font, border radius */
 
