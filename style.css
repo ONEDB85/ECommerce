@@ -2,90 +2,20 @@
 
 
 /* menu */
+
 body {
-  margin: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 #menu {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-/* cart styles */
-#cart{
- border: 1px solid black;
- box-shadow: 0px 0px 31px 1px;
- box-sizing: border-box;
- width: 98%;
- margin: 0 auto;
-}
-
-#cart h1 {
-  background-color: #FFB095;
-  display: block;
-  border-radius: 0;
-  margin: 0 auto;
-}
-
-#cart h2 {
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-  background-color: #65FEB4;
-  border-radius: 0;
-  box-sizing: border-box;
-}
-
-#cart h4 {
-  display: block;
-  text-align: right;
-  margin: 0 10px 0 0;
-}
-
-#cart span {
-  display: inline-block;
-  width: 18%;
-}
-
-#cart .cartButtons {
-  box-sizing: border-box;
-  width: 95%;
-  margin: 5px auto;
-  text-align: center;
-  padding: 3px 12px;
-  background-color: #FFB095;
-  border-radius: 3px;
-  font-family: 'Russo One', sans-serif;
-  box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
-}
-
-/* cash payment styles */
-#cash h1 {
-  background-color: #FFB095;
-  box-sizing: border-box;
-  width: 100%;
-  border-radius: 0;
-  margin: 0;
-}
-
-#cash input {
-  display: block;
-  width: 95%;
-  margin: 10px auto;
-}
-
-#cash input[type=button] {
-  background-color: #65FEB4;
-  font-family: 'Russo One', sans-serif;
-  padding: 3px 12px;
-  text-transform: uppercase;
-  color: white;
-}
-
-#cashPay {
-  padding-top: 15px;
 }
 
 .itemInfo {
@@ -113,10 +43,6 @@ body {
 
 #header {
     display: none;
-  }
-
-.hidden {
-  display: none !important;
 }
 
 .menuQuantity {
@@ -137,17 +63,15 @@ body {
 .numberInput {
     width: 80px;
     height: 20px;
-    border: 1px solid grey;
+    border-color: black;
 }
 
-form {
-
-  border: 1px solid black;
-  text-align: center;
-  box-shadow: 0px 0px 31px 1px;
-  box-sizing: border-box;
+.mainContainer {
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 0px 0px 31px 1px;
+    box-sizing: border-box;
 }
-
 
 .buttonContainer {
     display: flex;
@@ -159,7 +83,111 @@ form {
     justify-content: flex-end;
 }
 
+.addBasket {
+    font-family: 'Russo One', sans-serif;
+    background-color: #FFB095;
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+    height: 25px;
+}
 
+#checkout {
+    margin-top: 35px;
+    height: 25px;
+    width: 90px;
+}
+
+
+/*.hoverDescrip{
+
+  display: none;
+
+}*/
+
+
+/* cart styles */
+
+#cart {
+    border: 1px solid black;
+    box-shadow: 0px 0px 31px 1px;
+    box-sizing: border-box;
+    width: 98%;
+    margin: 0 auto;
+}
+
+#cart h1 {
+    background-color: #FFB095;
+    display: block;
+    border-radius: 0;
+    margin: 0 auto;
+}
+
+#cart h2 {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    background-color: #65FEB4;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+#cart h4 {
+    display: block;
+    text-align: right;
+    margin: 0 10px 0 0;
+}
+
+#cart span {
+    display: inline-block;
+    width: 18%;
+}
+
+#cart .cartButtons {
+    box-sizing: border-box;
+    width: 95%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 3px 12px;
+    background-color: #FFB095;
+    border-radius: 3px;
+    font-family: 'Russo One', sans-serif;
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* cash payment styles */
+
+#cash h1 {
+    background-color: #FFB095;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+}
+
+#cash input {
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+}
+
+#cash input[type=button] {
+    background-color: #65FEB4;
+    font-family: 'Russo One', sans-serif;
+    padding: 3px 12px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#cashPay {
+    padding-top: 15px;
+}
+
+
+
+.hidden {
+    display: none !important;
+}
 
 
 
@@ -184,62 +212,63 @@ form {
 }
 
 
+
+
 /* Website Color, Font, border radius */
 
-body{
-  background-color: #ccffe6;
+body {
+    background-color: #ccffe6;
 }
 
-h1{
-  display: inline-block;
-  border-radius: 5px;
-  text-align: center;
-  padding: 3px 12px;
-  font-family: 'Russo One', sans-serif;
-  }
-
-h2{
-  display: inline-block;
-  border-radius: 5px;
-  text-align: center;
-  padding: 3px 12px;
-  font-family: 'Russo One', sans-serif;
+h1 {
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px 12px;
+    font-family: 'Russo One', sans-serif;
 }
 
-h3{
-  font-family: 'Russo One', sans-serif;
+h2 {
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px 12px;
+    font-family: 'Russo One', sans-serif;
 }
 
-h4{
-  display: inline-block;
-  border-radius: 5px;
-  padding: 3px 12px;
-  font-family: 'Russo One', sans-serif;
+h3 {
+    font-family: 'Russo One', sans-serif;
 }
 
-p{
-  font-family: 'Russo One', sans-serif;
+h4 {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 3px 12px;
+    font-family: 'Russo One', sans-serif;
 }
 
-label{
-  font-family: 'Russo One', sans-serif;
+p {
+    font-family: 'Russo One', sans-serif;
 }
 
-ul li{
-  font-family: 'Russo One', sans-serif;
-  }
+label {
+    font-family: 'Russo One', sans-serif;
+}
+
+ul li {
+    font-family: 'Russo One', sans-serif;
+}
+
+
+
 /* receipt */
 
 @media only screen and (min-width: 768px) {
     /* menu */
-    .itemInfo {
-        display: flex;
-        width: auto;
-        margin-top: 0px;
-    }
-
     .purchaseInfo {
         width: auto;
+        margin-right: 25px;
+        justify-content: space-between;
     }
 
 
@@ -254,47 +283,52 @@ ul li{
     }
 
     .itemInfo {
+        margin-top: 0px;
         display: flex;
-    }
-
-    .itemRow {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .itemRow h3 {
-        display: flex;
-    }
-
-    .menuQuantity {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    .menuPrice {
-        margin-right: 40px;
-    }
-
-    #totalTitle {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    .numberInput {
-        width: 80px;
-        height: 20px;
-    }
-
-    form {
-        padding: 40px 150px 40px 150px;
-        border: 1px solid black;
+        justify-content: space-between;
+        width: 230px;
     }
 
     .itemRow {
         justify-content: space-between;
         align-items: center;
         display: flex;
+        flex-direction: row;
     }
+
+
+    .itemRow h3 {
+        display: flex;
+    }
+
+    .menuPrice {
+        margin-left: 40px;
+        margin-right: 15px;
+    }
+
+    .menuQuantity {
+        margin-right: 10px;
+        justify-content: flex-end;
+    }
+
+    #totalTitle {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .numberInput {
+        width: 80px;
+        height: 20px;
+        margin-right: 30px;
+        border-color: black;
+    }
+
+    .mainContainer {
+        padding: 40px 150px 40px 150px;
+        border: 1px solid black;
+    }
+
+
 
     .buttonContainer {
         display: flex;
@@ -305,6 +339,24 @@ ul li{
         display: flex;
         justify-content: flex-end;
     }
+
+
+    .addBasket {
+
+        font-family: 'Russo One', sans-serif;
+        background-color: #FFB095;
+        box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+        height: 25px;
+        cursor: pointer;
+    }
+
+    #checkout {
+        margin-top: 15px;
+        height: 30px;
+        width: 100px;
+    }
+
+
     /* cart */
     /* cash  */
     /* credit */
