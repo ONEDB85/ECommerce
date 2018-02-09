@@ -132,93 +132,7 @@
             <button type="button" id="checkout" class="addBasket">Checkout</button>
         </div>
     </div>
-    <div id="cart" class="hidden">
-        <h1>Shopping Cart</h1>
-        <h2>Product & Quantity</h2>
-        <ul id="productQuantity">
-        </ul>
-        <ul>
-            <h4>Subtotal: $<span id= "cartSubTotal"></span></h4>
-            <h4>Tax: $<span id= "cartTax"></span></h4>
-            <h4>Total: $<span id= "cartTotal"></span></h4>
-        </ul>
-        <div id="cashbutton" class="cartButtons">
-            Pay with Cash
-        </div>
-        <div id="creditbutton" class="cartButtons">
-            Pay with Credit
-        </div>
-    </div>
-    <div id="cash" class="hidden">
-        <h1>Total Owed: $<span id="cashTotal">CASH</span></h1>
-        <form>
-            <label>Cash Tendered
-                <input id="cashTendered" type="number" min="0.00" step="0.01">
-            </label>
-            <input id="cashPay" type="button" value="Pay">
-        </form>
-        <div>
-            <p id="changeOutput" class="hidden">Your change: $<span id="change"></span></p>
-        </div>
-        <div id="toReceipt" class="hidden">Print Receipt</div>
-    </div>
-    <div id="credit" class="hidden">
-        <h1>Credit Card</h1>
-        <form id="ccPay">
-            <div>
-                <label>Card Number
-                    <input id="inputItem1" type="number" required>
-                </label>
-            </div>
-            <div>
-                <label>CVV
-                    <input id="inputItem1" type="number" required>
-                </label>
-                <label>Name
-                    <input id="inputItem1" type="text" required>
-                </label>
-            </div>
-            <div>
-                <label class="cardOption">
-                    <input id="inputItem1" type="radio" name="cardType" required>American Express</label>
-                <label class="cardOption">
-                    <input id="inputItem1" type="radio" name="cardType">Visa</label>
-                <label class="cardOption">
-                    <input id="inputItem1" type="radio" name="cardType">Mastercard</label>
-                <label class="cardOption">
-                    <input id="inputItem1" type="radio" name="cardType">Discover</label>
-            </div>
-            <div>
-                <label>Expiration Date
-                    <select required>
-                        <option value="01">Jan</option>
-                        <option value="02">Feb</option>
-                        <option value="03">Mar</option>
-                        <option value="04">Apr</option>
-                        <option value="05">May</option>
-                        <option value="06">Jun</option>
-                        <option value="07">Jul</option>
-                        <option value="08">Aug</option>
-                        <option value="09">Sep</option>
-                        <option value="10">Oct</option>
-                        <option value="11">Nov</option>
-                        <option value="12">Dec</option>
-                    </select>
-                    <input id="Year" type="number" min="2018" step="1" required>
-                </label>
-            </div>
-            <div>
-                <input type="submit" value="Charge"></input>
-            </div>
-        </form>
-    </div>
-    <div id="receipt" class="hidden">
-        <p>receipt goes here</p>
-    </div>
-    <script src="jquery-3.3.1.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
-    <script type="text/javascript" src="javascript.js"></script>
-</body>
+
 
 <div id="cart" class="window hidden">
   <h1>Shopping Cart</h1>
@@ -230,12 +144,14 @@
     <h4>Tax: $<span id= "cartTax"></span></h4>
     <h4>Total: $<span id= "cartTotal"></span></h4>
   </ul>
+  <div id="cartButtonContainer">
   <div id= "cashbutton" class="cartButtons">
   	Pay with Cash
   </div>
   <div id= "creditbutton" class="cartButtons">
   	Pay with Credit
   </div>
+</div>
 </div>
 
 <div id="cash" class="window hidden">
@@ -254,11 +170,11 @@
 	<h1>Credit Card</h1>
 	<form>
 		<div>
-			<label for="cardNumber">Card Number</label> <input id="cardNumber" type="number" required>
+			<label class="cardLabel">Card Number</label> <input id="cardNumber" type="number" required>
 		</div>
 		<div>
-			<label>CVV</label> <input id="cvv" type="number" required>
-			<label>Name</label> <input id="ccname" type="text" required>
+			<label class="cardLabel">CVV</label> <input id="cvv" type="number" required>
+			<label class="cardLabel">Name</label> <input id="ccname" type="text" required>
 		</div>
 		<div>
       <div class="cardOption">
@@ -275,8 +191,9 @@
       </div>
     </div>
 		<div>
-			<label>Expiration Date</label>
-			<select id="month" required>
+			<label class="cardLabel">Expiration Date</label>
+			<div class="ccexp">
+        <select id="month" required>
 				<option value="01">Jan</option>
 				<option value="02">Feb</option>
 				<option value="03">Mar</option>
@@ -291,10 +208,9 @@
 				<option value="12">Dec</option>
 			</select>
 			<input id="year" type="number"  min="2018" step="1" required>
+    </div>
 		</div>
-		<div>
-			<input  id="ccPay" type="button" value="Charge"></input>
-		</div>
+			<input id="ccPay" type="button" value="Charge">
 	</form>
 </div>
 
@@ -308,6 +224,5 @@
 <script src="jquery-3.3.1.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
 <script type="text/javascript" src="javascript.js"></script>
-
-
+</body>
 </html>

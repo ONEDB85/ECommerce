@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
 
+/* .hidden {
+  display: none !important;
+} */
+
 
 /* menu */
 
@@ -18,9 +22,7 @@ a {
     align-items: center;
 }
 
-.hidden {
-  display: none !important;
-}
+
 
 
 /* class styles for all pop-ups */
@@ -124,6 +126,16 @@ a {
   margin: 0 auto;
 }
 
+.cardLabel {
+  text-align: center;
+}
+
+.ccexp {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
 #credit select {
   background-color: #FFB095;
   color: white;
@@ -148,6 +160,7 @@ a {
 
 
 #ccPay {
+  display: block;
   background-color: #65FEB4;
   box-sizing: border-box;
   font-family: 'Russo One', sans-serif;
@@ -158,6 +171,7 @@ a {
   font-size: 24px;
   margin: 10px auto;
   width: 95%;
+  text-align: center;
 }
 
 /* receipt style */
@@ -337,10 +351,6 @@ a {
 
 
 
-.hidden {
-    display: none !important;
-}
-
 
 
 /* cart */
@@ -421,6 +431,25 @@ ul li {
         width: auto;
         margin-right: 25px;
         justify-content: space-between;
+    }
+
+    #cart {
+      margin: 40px auto;
+      width: 600px;
+    }
+
+    #cartButtonContainer {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #cart .cartButtons {
+      width: 200px;
+    }
+
+    #cash {
+      margin: 40px auto;
+      width: 600px;
     }
 
 
