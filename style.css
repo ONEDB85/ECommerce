@@ -9,6 +9,10 @@
     justify-content: center;
     align-items: center;
 }
+#cart{
+ border: 1px solid black;
+ box-shadow: 0px 0px 31px 1px  
+}
 
 .itemInfo {
     margin-top: 40px;
@@ -38,7 +42,7 @@
   }
 
 .hidden {
-  display: none !important; 
+  display: none !important;
 }
 
 .menuQuantity {
@@ -63,9 +67,10 @@
 }
 
 form {
-    padding: 10px 50px 40px 50px;
-    border: 1px solid black;
-    text-align: center;
+  padding: 10px 50px 40px 50px;
+  border: 1px solid black;
+  text-align: center;
+  box-shadow: 0px 0px 31px 1px
 }
 
 
@@ -107,42 +112,38 @@ form {
 
 	display: inline-block;
   padding: 3px 12px;
-  background-color: lightblue;
+  background-color: #FFB095;
 	border-radius: 3px;
   font-family: 'Russo One', sans-serif;
-
+  box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
 }
 
 #creditbutton {
 
   display: inline-block;
   padding: 3px 12px;
-  background-color: lightblue;
+  background-color: #FFB095;
 	border-radius: 3px;
   font-family: 'Russo One', sans-serif;
-
+  box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
 }
 
 /* Website Color, Font, border radius */
 
 body{
-  background-color: rgb(19, 232, 123);
+  background-color: #ccffe6;
 }
 
 h1{
   display: inline-block;
-  color: rgb(88, 104, 214);
-  background-color: lightgrey;
   border-radius: 5px;
   text-align: center;
   padding: 3px 12px;
   font-family: 'Russo One', sans-serif;
-}
+  }
 
 h2{
   display: inline-block;
-  color:rgb(64, 130, 208);
-  background-color: lightgrey;
   border-radius: 5px;
   text-align: center;
   padding: 3px 12px;
@@ -155,8 +156,6 @@ h3{
 
 h4{
   display: inline-block;
-  color: rgb(127, 33, 210);
-  background-color: lightgrey;
   border-radius: 5px;
   padding: 3px 12px;
   font-family: 'Russo One', sans-serif;
@@ -172,8 +171,7 @@ label{
 
 ul li{
   font-family: 'Russo One', sans-serif;
-
-}
+  }
 /* receipt */
 
 @media only screen and (min-width: 768px) {
@@ -269,15 +267,15 @@ ul li{
     #cashbutton {
         display: inline-block;
         padding: 3px 12px;
-        background-color: lightblue;
+        background-color: #FFB095;
         border-radius: 3px;
-        font-family: 'verdana', sans-serif;
+        font-family: 'Russo One', sans-serif;
     }
     #creditbutton {
         display: inline-block;
         padding: 3px 12px;
-        background-color: lightblue;
+        background-color: #FFB095;
         border-radius: 3px;
-        font-family: 'verdana', sans-serif;
+        font-family: 'Russo One', sans-serif;
     }
 }
