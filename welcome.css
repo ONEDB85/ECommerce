@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+body{
+background-color: #ccffe6;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  background-color: #65FEB4;
+  box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  background-color: #FFB095;
+  box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+a h2{
+ background-color: #65FEB4;
+}
+
+#Clothes {
+  border: 1px solid black;
+  box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+#Accessories {
+  border: 1px solid black;
+  box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+#Electronics {
+  border: 1px solid black;
+  box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+
+
+  @import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+  body{
+  background-color: #ccffe6;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    background-color: #65FEB4;
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  h2 {
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    background-color: #FFB095;
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  a h2{
+   background-color: #65FEB4;
+  }
+
+  #Clothes {
+    border: 1px solid black;
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  #Accessories {
+    border: 1px solid black;
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  #Electronics {
+    border: 1px solid black;
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+  }
+}
