@@ -9,7 +9,7 @@ $(function() {
         var count = parseInt(inputEl.val());
         menuItems[productNum].count = count;
         var added = $(this).text("added");
-       
+
     });
 
     // array of menu objects
