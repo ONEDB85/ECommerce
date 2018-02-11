@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
 
+
+
 /*-----------------------------------------------------------------------------mobile view*/
 
 
@@ -7,541 +9,542 @@
   display: none !important;
 } */
 
+
 /* --------------------------------------------menu */
 
-
-body {
-  margin: 0;
-}
-
 a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 #menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .itemInfo {
-  margin-top: 40px;
-  width: 300px;
+    margin-top: 40px;
+    width: 300px;
 }
 
 .pintGlass {
-  margin-top: 0px;
+    margin-top: 0px;
 }
 
 .purchaseInfo {
-  width: 300px;
+    width: 300px;
 }
 
 .itemRow {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .itemRow h3 {
-  display: inline-block;
+    display: inline-block;
 }
 
 #header {
-  display: none;
+    display: none;
 }
 
 .menuQuantity {
-  margin-left: 10px;
-  margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 .menuPrice {
-  margin-left: 45px;
-  margin-right: 10px;
+    margin-left: 45px;
+    margin-right: 10px;
 }
 
 #totalTitle {
-  margin-left: 40px;
-  margin-right: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .numberInput {
-  width: 80px;
-  height: 20px;
-  border-color: black;
+    width: 80px;
+    height: 20px;
+    border-color: black;
+    font-weight: bolder;
+    text-align: center;
 }
 
 .mainContainer {
-  border: 1px solid black;
-  text-align: center;
-  box-shadow: 0px 0px 31px 1px;
-  box-sizing: border-box;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 0px 0px 31px 1px;
+    box-sizing: border-box;
 }
 
 .buttonContainer {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .totalRow {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .addBasket {
-  font-family: 'Russo One', sans-serif;
-  background-color: #FFB095;
-  box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
-  height: 25px;
+    font-family: 'Russo One', sans-serif;
+    background-color: #FFB095;
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+    height: 25px;
+    width: 115px;
 }
 
 #checkout {
-  margin-top: 35px;
-  height: 25px;
-  width: 90px;
+    margin-top: 35px;
+    height: 25px;
+    width: 90px;
+    font-family: 'Russo One', sans-serif;
+    background-color: #FFB095;
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
 }
+
+ .hoverDescrip {
+        display: none;
+    }
 
 
 
 /* class styles for all pop-ups */
 
 .window {
-  border: 1px solid black;
-  box-shadow: 0px 0px 31px 1px;
-  box-sizing: border-box;
-  width: 98%;
-  margin: 0 auto;
-  margin-top: 30px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 31px 1px;
+    box-sizing: border-box;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .window h1 {
-  background-color: #FFB095;
-  display: block;
-  border-radius: 0;
-  margin: 0 auto;
+    background-color: #FFB095;
+    display: block;
+    border-radius: 0;
+    margin: 0 auto;
 }
 
 
+
+
 /* cart styles */
+
 
 /* cart styles */
 
 #cart {
-  border: 1px solid black;
-  box-shadow: 0px 0px 31px 1px;
-  box-sizing: border-box;
-  width: 98%;
-  margin: 0 auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 31px 1px;
+    box-sizing: border-box;
+    width: 98%;
+    margin: 0 auto;
 }
 
 #cart h1 {
-  background-color: #FFB095;
-  display: block;
-  border-radius: 0;
-  margin: 0 auto;
+    background-color: #FFB095;
+    display: block;
+    border-radius: 0;
+    margin: 0 auto;
 }
 
 #cart h2 {
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-  background-color: #65FEB4;
-  border-radius: 0;
-  box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    background-color: #65FEB4;
+    border-radius: 0;
+    box-sizing: border-box;
 }
 
 
 #cart h4 {
-  display: block;
-  text-align: right;
-  margin: 0 10px 0 0;
+    display: block;
+    text-align: right;
+    margin: 0 10px 0 0;
 }
 
 #cart span {
-  display: inline-block;
-  width: 18%;
+    display: inline-block;
+    width: 18%;
 }
 
 
 #cart .cartButtons {
-  box-sizing: border-box;
-  width: 95%;
-  margin: 5px auto;
-  text-align: center;
-  padding: 3px 12px;
-  background-color: #FFB095;
-  border-radius: 3px;
-  font-family: 'Russo One', sans-serif;
-  box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
-  height: 40px;
-  line-height: 40px;
+    box-sizing: border-box;
+    width: 95%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 3px 12px;
+    background-color: #FFB095;
+    border-radius: 3px;
+    font-family: 'Russo One', sans-serif;
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+    height: 40px;
+    line-height: 40px;
 }
+
+
 
 
 /* credit card styles */
 
 #credit form {
-  box-shadow: none;
-  border: none;
-  padding-top: 10px;
+    box-shadow: none;
+    border: none;
+    padding-top: 10px;
 }
 
 #cvv,
 #ccname,
 #cardNumber {
-  display: block;
-  width: 95%;
-  height: 40px;
-  box-sizing: border-box;
-  margin: 0 auto;
+    display: block;
+    width: 95%;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .cardLabel {
-  text-align: center;
+    text-align: center;
 }
 
 .ccexp {
-  margin: 0 auto;
-  text-align: center;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
 #credit select {
-  background-color: #FFB095;
-  color: white;
-  font-family: 'Russo One', sans-serif;
-  text-align: center;
-  width: 30%;
+    background-color: #FFB095;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    width: 30%;
 }
 
 #credit label {
-  display: block;
+    display: block;
 }
 
 .cardOption {
-  display: block;
-  text-align: left;
+    display: block;
+    text-align: left;
 }
 
 .cardOption input,
 .cardOption label {
-  display: inline-block;
-  padding-left: 20px;
+    display: inline-block;
+    padding-left: 20px;
 }
 
 
 #ccPay {
-  display: block;
-  background-color: #65FEB4;
-  box-sizing: border-box;
-  font-family: 'Russo One', sans-serif;
-  padding: 3px 12px;
-  text-transform: uppercase;
-  color: white;
-  height: 40px;
-  font-size: 24px;
-  margin: 10px auto;
-  width: 95%;
-  text-align: center;
+    display: block;
+    background-color: #65FEB4;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    padding: 3px 12px;
+    text-transform: uppercase;
+    color: white;
+    height: 40px;
+    font-size: 24px;
+    margin: 10px auto;
+    width: 95%;
+    text-align: center;
 }
+
+
 
 
 /* receipt style */
 
 #receipt p {
-  background-color: white;
-  width: 300px;
-  font-family: monospace;
-  margin: 0 auto;
-  opacity: .8;
+    background-color: white;
+    width: 300px;
+    font-family: monospace;
+    margin: 0 auto;
+    opacity: .8;
 }
-
-
-
-
-
-/*.hoverDescrip{
-
-  display: none;
-
-}*/
-
-
 
 
 /* cash payment styles */
 
 #cash h1 {
-  background-color: #FFB095;
-  box-sizing: border-box;
-  width: 100%;
-  border-radius: 0;
-  margin: 0;
+    background-color: #FFB095;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
 }
 
 #cash input {
-  display: block;
-  width: 95%;
-  margin: 10px auto;
+    display: block;
+    width: 95%;
+    margin: 10px auto;
 }
 
 #cash input[type=button] {
-  background-color: #65FEB4;
-  font-family: 'Russo One', sans-serif;
-  padding: 3px 12px;
-  text-transform: uppercase;
-  color: white;
+    background-color: #65FEB4;
+    font-family: 'Russo One', sans-serif;
+    padding: 3px 12px;
+    text-transform: uppercase;
+    color: white;
 }
 
 #cashPay {
-  padding-top: 15px;
+    padding-top: 15px;
 }
 
 
 #cash>div {
-  padding-top: 20px;
-  margin: 0 auto;
+    padding-top: 20px;
+    margin: 0 auto;
 }
 
 #cash label,
 p {
-  display: block;
-  text-align: center;
+    display: block;
+    text-align: center;
 }
 
 #cash input {
-  display: block;
-  box-sizing: border-box;
-  width: 95%;
-  margin: 10px auto;
-  height: 40px;
-  font-size: 35px;
+    display: block;
+    box-sizing: border-box;
+    width: 95%;
+    margin: 10px auto;
+    height: 40px;
+    font-size: 35px;
 }
 
 #cash input[type=button] {
-  background-color: #65FEB4;
-  box-sizing: border-box;
-  font-family: 'Russo One', sans-serif;
-  padding: 3px 12px;
-  text-transform: uppercase;
-  color: white;
-  height: 40px;
-  font-size: 24px;
+    background-color: #65FEB4;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    padding: 3px 12px;
+    text-transform: uppercase;
+    color: white;
+    height: 40px;
+    font-size: 24px;
 }
 
 #cashPay {
-  padding-top: 15px;
+    padding-top: 15px;
 }
-
-
 
 /* credit */
 
 #credit {
-  outline: 1px solid black;
+    outline: 1px solid black;
 }
 
 #credit form div {
-  display: block;
+    display: block;
 }
 
 #credit input {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 
 /* Website Color, Font, border radius */
 
 body {
-  background-color: #ccffe6;
+    background-color: #ccffe6;
+    margin: 0;
 }
 
 h1 {
-  display: inline-block;
-  border-radius: 5px;
-  text-align: center;
-  padding: 3px 12px;
-  font-family: 'Russo One', sans-serif;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px 12px;
+    font-family: 'Russo One', sans-serif;
 }
 
 h2 {
-  display: inline-block;
-  border-radius: 5px;
-  text-align: center;
-  padding: 3px 12px;
-  font-family: 'Russo One', sans-serif;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px 12px;
+    font-family: 'Russo One', sans-serif;
 }
 
 h3 {
-  font-family: 'Russo One', sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
 
 h4 {
-  display: inline-block;
-  border-radius: 5px;
-  padding: 3px 12px;
-  font-family: 'Russo One', sans-serif;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 3px 12px;
+    font-family: 'Russo One', sans-serif;
 }
 
 p {
-  font-family: 'Russo One', sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
 
 label {
-  font-family: 'Russo One', sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
 
 ul li {
-  font-family: 'Russo One', sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
+
 
 
 /*---------------------------------------------------------------------------------desktop view below*/
 
 @media only screen and (min-width: 768px) {
-  /* --------------------------------------------------menu */
+    /* --------------------------------------------------menu */
+    #images:hover .hoverDescrip {
+
+        display: block;
+        font-weight: bold;
+    }
+
+
     .purchaseInfo {
-      width: auto;
-      margin-right: 25px;
-      justify-content: space-between;
+        width: auto;
+        margin-right: 25px;
+        justify-content: space-between;
     }
 
     #header {
-      display: flex;
+        display: flex;
     }
 
     #menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .itemInfo {
-      margin-top: 0px;
-      display: flex;
-      justify-content: space-between;
-      width: 230px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 230px;
     }
 
     .itemRow {
-      justify-content: space-between;
-      align-items: center;
-      display: flex;
-      flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
     }
 
 
     .itemRow h3 {
-      display: flex;
+        display: flex;
     }
 
     .menuPrice {
-      margin-left: 40px;
-      margin-right: 15px;
+        margin-left: 40px;
+        margin-right: 15px;
     }
 
     .menuQuantity {
-      margin-right: 10px;
-      justify-content: flex-end;
+        margin-right: 10px;
+        justify-content: flex-end;
     }
 
     #totalTitle {
-      margin-left: 0px;
-      margin-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .numberInput {
-      width: 80px;
-      height: 20px;
-      margin-right: 30px;
-      border-color: black;
+        margin-right: 30px;
     }
 
     .mainContainer {
-      padding: 40px 150px 40px 150px;
-      border: 1px solid black;
+        padding: 40px 150px 40px 150px;
     }
 
     .buttonContainer {
-      display: flex;
-      justify-content: center;
+        display: flex;
+        justify-content: center;
     }
 
     .totalRow {
-      display: flex;
-      justify-content: flex-end;
+        display: flex;
+        justify-content: flex-end;
     }
 
-
     .addBasket {
+        cursor: pointer;
+        height: 28px;
+        width: 125px;
+    }
 
-      font-family: 'Russo One', sans-serif;
-      background-color: #FFB095;
-      box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
-      height: 25px;
-      cursor: pointer;
+    .addBasket:hover, #checkout:hover {
+        color: white;
     }
 
     #checkout {
-      margin-top: 15px;
-      height: 30px;
-      width: 100px;
+        cursor: pointer;
+        margin-top: 15px;
+        height: 30px;
+        width: 100px;
     }
 
 
     /* cart */
-
     #cart {
-      margin: 40px auto;
-      width: 600px;
+        margin: 40px auto;
+        width: 600px;
     }
 
     #cartButtonContainer {
-      margin: 0 auto;
-      text-align: center;
+        margin: 0 auto;
+        text-align: center;
     }
 
     #cart .cartButtons {
-      width: 200px;
+        width: 200px;
     }
 
 
     /* cash  */
-
-
-      #cash {
-      margin: 40px auto;
-      width: 600px;
+    #cash {
+        margin: 40px auto;
+        width: 600px;
     }
 
 
     /* credit */
     #credit {
-      outline: 1px solid black;
+        outline: 1px solid black;
     }
 
     #credit form div {
-      display: block;
+        display: block;
     }
 
     #credit input {
-      box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     #cashbutton {
-      display: inline-block;
-      padding: 3px 12px;
-      background-color: #FFB095;
-      border-radius: 3px;
-      font-family: 'Russo One', sans-serif;
+        display: inline-block;
+        padding: 3px 12px;
+        background-color: #FFB095;
+        border-radius: 3px;
+        font-family: 'Russo One', sans-serif;
     }
     #creditbutton {
-      display: inline-block;
-      padding: 3px 12px;
-      background-color: #FFB095;
-      border-radius: 3px;
-      font-family: 'Russo One', sans-serif;
+        display: inline-block;
+        padding: 3px 12px;
+        background-color: #FFB095;
+        border-radius: 3px;
+        font-family: 'Russo One', sans-serif;
     }
 }
