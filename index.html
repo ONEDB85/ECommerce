@@ -20,7 +20,6 @@
             <div class="itemRow">
                 <div class="itemInfo pintGlass">
                     <a id="images" href="images/pintglass.jpg"><h3>Pint Glass</h3><span class="hoverDescrip">clear glass</span></a>
-
                     <h3 id="priceItem1" class="menuPrice">$1.00</h3>
                 </div>
                 <div class="purchaseInfo">
@@ -133,97 +132,97 @@
             <button type="button" id="checkout">Checkout</button>
         </div>
     </div>
-
-
-<div id="cart" class="window hidden">
-  <h1>Shopping Cart</h1>
-  <h2>Product & Quantity</h2>
-  <ul id= "productQuantity">
-  </ul>
-  <ul>
-  	<h4>Subtotal: $<span id= "cartSubTotal"></span></h4>
-    <h4>Tax: $<span id= "cartTax"></span></h4>
-    <h4>Total: $<span id= "cartTotal"></span></h4>
-  </ul>
-  <div id="cartButtonContainer">
-  <div id= "cashbutton" class="cartButtons">
-  	Pay with Cash
-  </div>
-  <div id= "creditbutton" class="cartButtons">
-  	Pay with Credit
-  </div>
-</div>
-</div>
-
-<div id="cash" class="window hidden">
-	<h1>Total Owed: $<span id="cashTotal">CASH</span></h1>
-	<div >
-		<label for="cashTendered">Cash Tendered</label> <input id="cashTendered" type="number" min="0" min="0.00" step="0.01">
-		<input id="cashPay"  type="button" value="Pay">
-	</div>
-	<div>
-		<p id="changeOutput" class="hidden">Your change: $<span id="change"></span></p>
-	</div>
-  <input id="toReceipt" class="hidden" type="button" value="Print Receipt">
-</div>
-
-<div id="credit" class="window hidden">
-	<h1>Credit Card</h1>
-	<form>
-		<div>
-			<label class="cardLabel">Card Number</label> <input id="cardNumber" type="number" min="0" required>
-		</div>
-		<div>
-			<label class="cardLabel">CVV</label> <input id="cvv" type="number" min="0" required>
-			<label class="cardLabel">Name</label> <input id="ccname" type="text" required>
-		</div>
-		<div>
-      <div class="cardOption">
-			     <label><input type="radio" name="cardType" required>American Express</label>
-      </div>
-      <div class="cardOption">
-        <label><input type="radio" name="cardType">Visa</label>
-      </div>
-      <div class="cardOption">
-        <label><input type="radio" name="cardType">Mastercard</label>
-      </div>
-      <div class="cardOption">
-        <label><input type="radio" name="cardType">Discover</label>
-      </div>
+    <div id="cart" class="window hidden">
+        <h1>Shopping Cart</h1>
+        <h2>Product & Quantity</h2>
+        <ul id="productQuantity">
+        </ul>
+        <ul>
+            <h4>Subtotal: $<span id= "cartSubTotal"></span></h4>
+            <h4>Tax: $<span id= "cartTax"></span></h4>
+            <h4>Total: $<span id= "cartTotal"></span></h4>
+        </ul>
+        <div id="cartButtonContainer">
+            <div id="cashbutton" class="cartButtons">
+                Pay with Cash
+            </div>
+            <div id="creditbutton" class="cartButtons">
+                Pay with Credit
+            </div>
+        </div>
     </div>
-		<div>
-			<label class="cardLabel">Expiration Date</label>
-			<div class="ccexp">
-        <select id="month" required>
-				<option value="01">Jan</option>
-				<option value="02">Feb</option>
-				<option value="03">Mar</option>
-				<option value="04">Apr</option>
-				<option value="05">May</option>
-				<option value="06">Jun</option>
-				<option value="07">Jul</option>
-				<option value="08">Aug</option>
-				<option value="09">Sep</option>
-				<option value="10">Oct</option>
-				<option value="11">Nov</option>
-				<option value="12">Dec</option>
-			</select>
-			<input id="year" type="number" min="0"  min="2018" step="1" required>
+    <div id="cash" class="window hidden">
+        <h1>Total Owed: $<span id="cashTotal">CASH</span></h1>
+        <div>
+            <label for="cashTendered">Cash Tendered</label>
+            <input id="cashTendered" type="number" min="0" min="0.00" step="0.01">
+            <input id="cashPay" type="button" value="Pay">
+        </div>
+        <div>
+            <p id="changeOutput" class="hidden">Your change: $<span id="change"></span></p>
+        </div>
+        <input id="toReceipt" class="hidden" type="button" value="Print Receipt">
     </div>
-		</div>
-			<input id="ccPay" type="button" value="Charge">
-	</form>
-</div>
-
-<div id="receipt" class="hidden">
-  <p>Thanks for shopping with us!</p>
-</div>
-
-
-
-
-<script src="jquery-3.3.1.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
-<script type="text/javascript" src="javascript.js"></script>
+    <div id="credit" class="window hidden">
+        <h1>Credit Card</h1>
+        <form>
+            <div>
+                <label class="cardLabel">Card Number</label>
+                <input id="cardNumber" type="number" min="0" required>
+            </div>
+            <div>
+                <label class="cardLabel">CVV</label>
+                <input id="cvv" type="number" min="0" required>
+                <label class="cardLabel">Name</label>
+                <input id="ccname" type="text" required>
+            </div>
+            <div>
+                <div class="cardOption">
+                    <label>
+                        <input type="radio" name="cardType" required>American Express</label>
+                </div>
+                <div class="cardOption">
+                    <label>
+                        <input type="radio" name="cardType">Visa</label>
+                </div>
+                <div class="cardOption">
+                    <label>
+                        <input type="radio" name="cardType">Mastercard</label>
+                </div>
+                <div class="cardOption">
+                    <label>
+                        <input type="radio" name="cardType">Discover</label>
+                </div>
+            </div>
+            <div>
+                <label class="cardLabel">Expiration Date</label>
+                <div class="ccexp">
+                    <select id="month" required>
+                        <option value="01">Jan</option>
+                        <option value="02">Feb</option>
+                        <option value="03">Mar</option>
+                        <option value="04">Apr</option>
+                        <option value="05">May</option>
+                        <option value="06">Jun</option>
+                        <option value="07">Jul</option>
+                        <option value="08">Aug</option>
+                        <option value="09">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+                    <input id="year" type="number" min="0" min="2018" step="1" required>
+                </div>
+            </div>
+            <input id="ccPay" type="button" value="Charge">
+        </form>
+    </div>
+    <div id="receipt" class="hidden">
+        <p>Thanks for shopping with us!</p>
+    </div>
+    <script src="jquery-3.3.1.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+    <script type="text/javascript" src="javascript.js"></script>
 </body>
+
 </html>

@@ -2,6 +2,7 @@
 
 
 
+
 /*-----------------------------------------------------------------------------mobile view*/
 
 
@@ -107,11 +108,9 @@ a {
     box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
 }
 
- .hoverDescrip {
-        display: none;
-    }
-
-
+.hoverDescrip {
+    display: none;
+}
 
 /* class styles for all pop-ups */
 
@@ -130,12 +129,6 @@ a {
     border-radius: 0;
     margin: 0 auto;
 }
-
-
-
-
-/* cart styles */
-
 
 /* cart styles */
 
@@ -190,9 +183,6 @@ a {
     line-height: 40px;
 }
 
-
-
-
 /* credit card styles */
 
 #credit form {
@@ -219,7 +209,6 @@ a {
     margin: 0 auto;
     text-align: center;
 }
-
 
 #credit select {
     background-color: #FFB095;
@@ -260,9 +249,6 @@ a {
     text-align: center;
 }
 
-
-
-
 /* receipt style */
 
 #receipt p {
@@ -272,7 +258,6 @@ a {
     margin: 0 auto;
     opacity: .8;
 }
-
 
 /* cash payment styles */
 
@@ -338,6 +323,7 @@ p {
     padding-top: 15px;
 }
 
+
 /* credit */
 
 #credit {
@@ -359,6 +345,7 @@ body {
     margin: 0;
 }
 
+
 h1 {
     display: inline-block;
     border-radius: 5px;
@@ -366,6 +353,7 @@ h1 {
     padding: 3px 12px;
     font-family: 'Russo One', sans-serif;
 }
+
 
 h2 {
     display: inline-block;
@@ -399,17 +387,21 @@ ul li {
 }
 
 
-
 /*---------------------------------------------------------------------------------desktop view below*/
 
 @media only screen and (min-width: 768px) {
     /* --------------------------------------------------menu */
-    #images:hover .hoverDescrip {
-
-        display: block;
-        font-weight: bold;
+    a h3 {
+        padding-top: 20px;
+        margin: 0px;
     }
 
+    #images:hover .hoverDescrip {
+        display: flex;
+        font-weight: bolder;
+        position: absolute;
+        color: grey;
+    }
 
     .purchaseInfo {
         width: auto;
@@ -440,7 +432,6 @@ ul li {
         display: flex;
         flex-direction: row;
     }
-
 
     .itemRow h3 {
         display: flex;
@@ -485,17 +476,18 @@ ul li {
         width: 125px;
     }
 
-    .addBasket:hover, #checkout:hover {
+    .addBasket:hover,
+    #checkout:hover {
         color: white;
     }
 
     #checkout {
         cursor: pointer;
         margin-top: 15px;
-        height: 30px;
-        width: 100px;
+        height: auto;
+        width: 300px;
+        font-size: 40px;
     }
-
 
     /* cart */
     #cart {
@@ -511,7 +503,6 @@ ul li {
     #cart .cartButtons {
         width: 200px;
     }
-
 
     /* cash  */
     #cash {
