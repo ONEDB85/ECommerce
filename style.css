@@ -138,6 +138,7 @@ a {
     box-sizing: border-box;
     width: 98%;
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 #cart h1 {
@@ -269,19 +270,6 @@ a {
     margin: 0;
 }
 
-#cash input {
-    display: block;
-    width: 95%;
-    margin: 10px auto;
-}
-
-#cash input[type=button] {
-    background-color: #65FEB4;
-    font-family: 'Russo One', sans-serif;
-    padding: 3px 12px;
-    text-transform: uppercase;
-    color: white;
-}
 
 #cashPay {
     padding-top: 15px;
@@ -396,6 +384,13 @@ ul li {
         margin: 0px;
     }
 
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+    }
+
     #images:hover .hoverDescrip {
         display: flex;
         font-weight: bolder;
@@ -506,23 +501,72 @@ ul li {
 
     /* cash  */
     #cash {
-        margin: 40px auto;
-        width: 600px;
+      margin: 40px auto;
+      width: 600px;
+      padding-bottom: 20px;
+    }
+
+    #cash input, #cash p {
+      display: block;
+      width: 45%;
+      margin: 10px 0 0 0;
+    }
+
+    #cash label {
+      width: 100%;
+    }
+
+    #cashPay {
+      display: inline-block;
+      width: 45%
     }
 
 
     /* credit */
+
+
     #credit {
         outline: 1px solid black;
+        width: 600px;
+    }
+
+    .ccflex {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .divflex {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .ccexp {
+      display: block;
     }
 
     #credit form div {
         display: block;
+        margin-left: 25px;
     }
 
     #credit input {
         box-sizing: border-box;
+        display: inline-block;
     }
+
+    #credit label {
+      display: inline-block;
+    }
+
+    /* .ccflex label {
+      width: 25%;
+      display: inline-block;
+    }
+
+    .ccflex input[type=number], .ccflex input[type=text] {
+      display: inline-block;
+      width: 70%;
+    } */
 
     #cashbutton {
         display: inline-block;

@@ -160,6 +160,7 @@ $(function() {
                 $("#receipt").append("<p> " + product.item + " - $" + product.price + "</p>");
             }
         });
+        $("#receipt").append("<p>--------------------</p>")
         $("#receipt").append("<p> subtotal: $" + subtotal + "</p>");
         $("#receipt").append("<p> tax: $" + taxTotal + "</p>");
         $("#receipt").append("<p> total: $" + netTotal + "</p>");

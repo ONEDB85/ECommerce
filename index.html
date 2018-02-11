@@ -153,19 +153,20 @@
     </div>
     <div id="cash" class="window hidden">
         <h1>Total Owed: $<span id="cashTotal">CASH</span></h1>
-        <div>
+        <div class="flex">
             <label for="cashTendered">Cash Tendered</label>
             <input id="cashTendered" type="number" min="0" min="0.00" step="0.01">
             <input id="cashPay" type="button" value="Pay">
         </div>
-        <div>
+        <div class="flex">
             <p id="changeOutput" class="hidden">Your change: $<span id="change"></span></p>
+            <input id="toReceipt" class="hidden" type="button" value="Print Receipt">
         </div>
-        <input id="toReceipt" class="hidden" type="button" value="Print Receipt">
+
     </div>
     <div id="credit" class="window hidden">
         <h1>Credit Card</h1>
-        <form>
+        <form class="ccflex">
             <div>
                 <label class="cardLabel">Card Number</label>
                 <input id="cardNumber" type="number" min="0" required>
@@ -194,7 +195,7 @@
                         <input type="radio" name="cardType">Discover</label>
                 </div>
             </div>
-            <div>
+            <div class="divflex">
                 <label class="cardLabel">Expiration Date</label>
                 <div class="ccexp">
                     <select id="month" required>
