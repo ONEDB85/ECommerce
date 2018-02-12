@@ -1,6 +1,9 @@
 $(function() {
-
+	
     var itemQuantity;
+
+  
+    $(".akdProducts").fadeOut(2000).fadeIn(7000);
 
     $(".addBasket").click(function() {
         event.preventDefault();
@@ -8,7 +11,10 @@ $(function() {
         var productNum = parseInt(inputEl.attr("data-product-num"));
         var count = parseInt(inputEl.val());
         menuItems[productNum].count = count;
+
+        if (count>0){
         var added = $(this).text("added");
+    }
 
     });
 
