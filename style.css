@@ -261,6 +261,10 @@ a {
     opacity: .8;
 }
 
+#receipt {
+        margin-top: 30px;
+    }
+
 
 /* cash payment styles */
 
@@ -383,7 +387,7 @@ ul li {
     display: block;
 }
 
-
+ 
 
 /*------------------------------------------------------------------desktop view below*/
 
@@ -617,7 +621,5 @@ ul li {
         font-family: 'Russo One', sans-serif;
     }
 
-    #receipt {
-        margin-top: 30px;
-    }
+   
 }
